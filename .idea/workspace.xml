@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Initial commit, contains code for the creation of the dataset">
-      <change afterPath="$PROJECT_DIR$/train_test_val_split.py" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated markdowns for dataset and readme, split the dataset into train/val/test ready for machine learning implimentation/training">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset.md" beforeDir="false" afterPath="$PROJECT_DIR$/dataset.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749728192996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated markdowns for dataset and readme, split the dataset into train/val/test ready for machine learning implimentation/training">
+      <option name="closed" value="true" />
+      <created>1749815793951</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749815793951</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit, contains code for the creation of the dataset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit, contains code for the creation of the dataset" />
+    <MESSAGE value="Updated markdowns for dataset and readme, split the dataset into train/val/test ready for machine learning implimentation/training" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated markdowns for dataset and readme, split the dataset into train/val/test ready for machine learning implimentation/training" />
   </component>
 </project>
