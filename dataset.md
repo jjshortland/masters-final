@@ -11,4 +11,14 @@ Alongside this dataset, a CSV file was generated to track the **file name and lo
 
 The current dataset consists of **411 non-speech clips** and **436 speech clips**, for a total of **847 clips**. These were selected from an initial pool of **1173 clips** (751 speech and 422 non-speech) that were **manually verified**. A greater variety of speech clips were intentionally included, due to the wide range of **human speech characteristics and contexts** that the final model will need to handle, whereas the **non-speech domain** is comparatively more homogeneous. The **verification process** ensured that only clips genuinely containing human speech (or non-speech) were retained, excluding any that were **mis-tagged**.
 
-This dataset will serve as the input for training a **Voice Activity Detection (VAD)** model, with the goal of detecting and filtering human speech from environmental audio streams.
+Finally, the dataset was split into **train/validation/test** sets to enable a proper machine learning workflow. The split was performed at this stage to allow for consistent comparisons between different solutions. An **80% train**, **10% validation**, and **10% test** split was used. The split was stratified within the **speech** and **non-speech** categories to ensure that each subset maintained the same class balance.
+
+The final dataset is as follows:
+
+- **676 training clips:** 348 speech, 328 non-speech  
+- **87 validation clips:** 45 speech, 42 non-speech  
+- **84 test clips:** 43 speech, 41 non-speech
+
+
+
+This dataset will serve as the input for training and comparing different **Voice Activity Detection (VAD)** models, with the goal of detecting and filtering human speech from environmental audio streams.
