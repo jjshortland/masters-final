@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from pydub import AudioSegment
 
-API_key = 'LuLFjA93peZgs3gfxA2LRvm7f6HqubMfquhtfoRe'
+API_key = ''
 
 client = freesound.FreesoundClient()
 client.set_token(API_key, 'token')
