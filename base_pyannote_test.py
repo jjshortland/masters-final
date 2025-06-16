@@ -9,7 +9,7 @@ pipeline = Pipeline.from_pretrained(
 )
 
 metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset/metadata_split.csv')
-metadata = metadata[(metadata['split'] == 'test') & (metadata['verified'] == True)]
+#metadata = metadata[(metadata['split'] == 'test') & (metadata['verified'] == True)]
 
 y_true = []
 y_pred = []
@@ -41,10 +41,10 @@ recall = recall_score(y_true, y_pred, pos_label='speech')
 f1 = f1_score(y_true, y_pred, pos_label='speech')
 
 print("Pyannote VAD Evaluation:")
-print(f"Accuracy : {accuracy:.3f}")
-print(f"Precision: {precision:.3f}")
-print(f"Recall   : {recall:.3f}")
-print(f"F1 Score : {f1:.3f}")
+print(f"Accuracy : {accuracy:.4f}")
+print(f"Precision: {precision:.4f}")
+print(f"Recall   : {recall:.4f}")
+print(f"F1 Score : {f1:.4f}")
 
 results_df = metadata.copy()
 results_df = results_df.reset_index(drop=True)
