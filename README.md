@@ -62,4 +62,4 @@ The models were tested using the verified audio clip dataset. Evaluation metrics
 
 - **Silero** demonstrated strong performance, with a good balance of precision and recall. It sometimes missed subtle or low-volume speech, but generally made few mistakes.
 - **Pyannote** showed perfect recall but very low precision — it classified *everything* as speech, leading to high false positives. This suggests an over-sensitive threshold or model tuning mismatch.
-- **Webrtc** showed strong performance, but not as effective as Silero, only scoring higher in its recall score (89.5% vs 87.4%).
+- **Webrtc** showed strong performance, but not as effective as Silero, only scoring higher in its recall score (89.5% vs 87.4%). This test was completed in VAD mode 3, the most forgiving setting. VAD mode 0-2 all produced the same results as pyannote, labeling all clips as speech.
