@@ -56,5 +56,5 @@ print(f"False negatives (missed speech): {len(false_negatives)}")
 
 print('Saving results to CSV...')
 
-incorrect_df.to_csv("base_silero_misclassified.csv", index=False)
-false_negatives.to_csv("base_silero_false_negatives.csv", index=False)
+incorrect_df.to_csv("silero_base_misclassified.csv", index=False)
+false_negatives.to_csv("silero_base_false_negatives.csv", index=False)

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Dataset update">
-      <change afterPath="$PROJECT_DIR$/audio_backend_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base_pyannote_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base_silero_testing.py" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated ReadME">
+      <change afterPath="$PROJECT_DIR$/webrtc_base_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base_pyannote_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyannote_base_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base_silero_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/silero_base_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +46,9 @@
     "Python.silero_testing.executor": "Run",
     "Python.train_test_val_split.executor": "Run",
     "Python.vad_test.executor": "Run",
+    "Python.webrtc_base_test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Rebasing main",
+    "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -111,7 +113,31 @@
       <option name="project" value="LOCAL" />
       <updated>1750065086924</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated README.md">
+      <option name="closed" value="true" />
+      <created>1750108660602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750108660602</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated base VAD tests">
+      <option name="closed" value="true" />
+      <created>1750108708300</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750108708300</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated ReadME">
+      <option name="closed" value="true" />
+      <created>1750108798381</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750108798381</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,8 +154,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit, contains code for the creation of the dataset" />
     <MESSAGE value="Updated markdowns for dataset and readme, split the dataset into train/val/test ready for machine learning implimentation/training" />
-    <MESSAGE value="Updated ReadME" />
     <MESSAGE value="Dataset update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dataset update" />
+    <MESSAGE value="temporary commit before rebase" />
+    <MESSAGE value="Updated README.md" />
+    <MESSAGE value="updated base VAD tests" />
+    <MESSAGE value="Updated ReadME" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated ReadME" />
   </component>
 </project>
