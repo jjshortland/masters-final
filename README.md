@@ -25,7 +25,6 @@ The final dataset is as follows:
 - **84 test clips:** 43 speech, 41 non-speech
 
 
-
 This dataset will serve as the input for training and comparing different **Voice Activity Detection (VAD)** models, with the goal of detecting and filtering human speech from environmental audio streams.
 
 ## Pre-Trained VAD Testing
@@ -53,11 +52,11 @@ The models were tested using the verified audio clip dataset. Evaluation metrics
 
 ### Results
 
-| Model        | Accuracy | Precision | Recall | F1 Score |
-|--------------|----------|-----------|--------|----------|
-| **Silero**   | 0.921    | 0.970     | 0.874  | 0.919    |
-| **Pyannote** | 0.515    | 0.515     | 1.000  | 0.680    |
-| **Webrtc**   | 0.628    | 0.592     | 0.895  | 0.712    |
+| Model        | Accuracy  | Precision | Recall    | F1 Score  |
+|--------------|-----------|-----------|-----------|-----------|
+| **Silero**   | **0.921** | **0.970** | 0.874     | **0.919** |
+| **Pyannote** | 0.515     | 0.515     | 1.000     | 0.680     |
+| **Webrtc**   | 0.628     | 0.592     | **0.895** | 0.712     |
 
 
 - **Silero** demonstrated strong performance, with a good balance of precision and recall. It sometimes missed subtle or low-volume speech, but generally made few mistakes.
