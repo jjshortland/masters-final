@@ -96,7 +96,13 @@ To enhance the representation of speech dynamics, **Delta** (first derivative) a
 
 While precision slightly decreased, the significant boost in recall is valuable for this task. In the context of VAD, **false negatives (missed speech)** are more harmful than **false positives**, so a higher recall is preferable.
 
+### Model Comparison Table
 
+| Model Version            | Features Used                   | Scaling | Accuracy  | Precision | Recall    | F1 Score  |
+|--------------------------|----------------------------------|---------|-----------|-----------|-----------|-----------|
+| **Base MFCC SVM**        | 13 MFCC                         | ❌      | 0.798     | 0.760     | 0.884     | 0.817     |
+| **+ Scaler**             | 13 MFCC                         | ✅      | 0.881     | **0.884** | 0.884     | 0.884     |
+| **+ Delta + Delta-Delta**| 13 MFCC + Δ + ΔΔ (total: 39)    | ✅      | **0.905** | 0.872     | **0.954** | **0.911** |
 
 
 
