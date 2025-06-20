@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated ReadME">
-      <change afterPath="$PROJECT_DIR$/webrtc_base_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom_vad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfcc_svm_vad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_pyannote_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyannote_base_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_silero_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/silero_base_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +38,11 @@
   "keyToString": {
     "Python.audio_backend_test.executor": "Run",
     "Python.base_pyannote_test.executor": "Run",
+    "Python.custom_vad.executor": "Run",
     "Python.dataset.executor": "Run",
     "Python.dataset_verification.executor": "Run",
     "Python.fixing_metadata.executor": "Run",
+    "Python.mfcc_svm_vad.executor": "Run",
     "Python.one_audio_test.executor": "Run",
     "Python.silero_testing.executor": "Run",
     "Python.train_test_val_split.executor": "Run",
@@ -137,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750108798381</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Tested WebRTC VAD, and updated readme with results">
+      <option name="closed" value="true" />
+      <created>1750176440809</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1750176440809</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated ReadME">
+      <option name="closed" value="true" />
+      <created>1750176549307</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1750176549307</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +175,7 @@
     <MESSAGE value="temporary commit before rebase" />
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="updated base VAD tests" />
+    <MESSAGE value="Tested WebRTC VAD, and updated readme with results" />
     <MESSAGE value="Updated ReadME" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated ReadME" />
   </component>

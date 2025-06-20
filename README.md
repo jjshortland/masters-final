@@ -63,3 +63,18 @@ The models were tested using the verified audio clip dataset. Evaluation metrics
 - **Silero** demonstrated strong performance, with a good balance of precision and recall. It sometimes missed subtle or low-volume speech, but generally made few mistakes.
 - **Pyannote** showed perfect recall but very low precision — it classified *everything* as speech, leading to high false positives. This suggests an over-sensitive threshold or model tuning mismatch.
 - **Webrtc** showed strong performance, but not as effective as Silero, only scoring higher in its recall score (89.5% vs 87.4%). This test was completed in VAD mode 3, the most forgiving setting. VAD mode 0-2 all produced the same results as pyannote, labeling all clips as speech.
+
+## Bespoke Machine Learning VAD
+The next step was to code a bespoke VAD model using traditional machine learning techniques. 
+
+### MFCC SVM Model
+A 2012 paper identified Mel-Frequency Cepstral Coefficients (MFCCs) pair with a Support Vector Machine (SVM) as an effective VAD. For this first attempt, 13 MFCCs were extracted for each audio clip. An SVM was then trained on a combined train + validation dataset (following the same split as outlined in the `dataset` section). This is a simplistic model on which more sophisticated attempts could be built. Despite this, this first model resulted in strong performance on the held-out test dataset:
+- **Accuracy**: 0.798
+- **Precision**: 0.760
+- **Recall**: 0.884
+- **F1 Score**: 0.817
+
+This result is promising, especially for a lightweight model. The precision–recall balance indicates that the classifier correctly detects most speech clips while keeping false positives relatively low. While it doesn't reach perfect recall, the model captures the majority of speech instances and can serve as a solid foundation for further tuning or integration into an ensemble system.
+
+
+
