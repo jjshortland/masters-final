@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated ReadME">
-      <change afterPath="$PROJECT_DIR$/custom_vad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfcc_svm_vad.py" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfcc_svm_vad.py" beforeDir="false" afterPath="$PROJECT_DIR$/mfcc_svm_vad.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750176549307</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Trained and tested custom VAD using MFCC and an SVM. Updated README.md with results.">
+      <option name="closed" value="true" />
+      <created>1750435787148</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1750435787148</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated README.md">
+      <option name="closed" value="true" />
+      <created>1750435995187</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1750435995187</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,10 +188,11 @@
     <MESSAGE value="Updated markdowns for dataset and readme, split the dataset into train/val/test ready for machine learning implimentation/training" />
     <MESSAGE value="Dataset update" />
     <MESSAGE value="temporary commit before rebase" />
-    <MESSAGE value="Updated README.md" />
     <MESSAGE value="updated base VAD tests" />
     <MESSAGE value="Tested WebRTC VAD, and updated readme with results" />
     <MESSAGE value="Updated ReadME" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated ReadME" />
+    <MESSAGE value="Trained and tested custom VAD using MFCC and an SVM. Updated README.md with results." />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
 </project>

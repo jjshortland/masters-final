@@ -76,5 +76,28 @@ A 2012 paper identified **Mel-Frequency Cepstral Coefficients (MFCCs)** combined
 
 This result is promising, especially for a lightweight model. The precision–recall balance indicates that the classifier correctly detects most speech clips while keeping false positives relatively low. While it doesn't reach perfect recall, the model captures the majority of speech instances and can serve as a solid foundation for further tuning or integration into an ensemble system.
 
+### Iterative Improvements
+
+#### 1. Feature Scaling  
+SVMs are sensitive to feature scale, so normalization was introduced using a standard scaler. This alone yielded a marked improvement:
+
+- **Accuracy**: 0.881  
+- **Precision**: 0.884  
+- **Recall**: 0.884  
+- **F1 Score**: 0.884  
+
+#### 2. Delta and Delta-Delta MFCC Features  
+To enhance the representation of speech dynamics, **Delta** (first derivative) and **Delta-Delta** (second derivative) features were added. These capture how the MFCCs change over time, increasing the total features per clip from 13 to 39. Combined with normalization, this led to further gains:
+
+- **Accuracy**: 0.905  
+- **Precision**: 0.872  
+- **Recall**: 0.954  
+- **F1 Score**: 0.911  
+
+While precision slightly decreased, the significant boost in recall is valuable for this task. In the context of VAD, **false negatives (missed speech)** are more harmful than **false positives**, so a higher recall is preferable.
+
+
+
+
 
 

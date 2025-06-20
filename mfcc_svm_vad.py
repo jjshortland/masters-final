@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import librosa
+from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
@@ -15,7 +16,10 @@ test_metadata = metadata[metadata['split'] == 'test']
 def extract_mfcc(filepath, sr=16000, n_mfcc=13):
     y, sr = librosa.load(filepath, sr=sr)
     mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=n_mfcc)
-    mfcc_mean = np.mean(mfcc, axis=1)
+    delta = librosa.feature.delta(mfcc)
+    delta2 = librosa.feature.delta(mfcc, order=2)
+    combined = np.concatenate((mfcc, delta, delta2), axis=0)
+    mfcc_mean = np.mean(combined, axis=1)
     return mfcc_mean
 
 base_dir = '/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset'
@@ -36,6 +40,10 @@ def prepare_set(df):
 
 X_train, y_train = prepare_set(train_metadata)
 X_test, y_test = prepare_set(test_metadata)
+
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
 
 clf = SVC(kernel="rbf", C=1.0, gamma="scale")
 clf.fit(X_train, y_train)
