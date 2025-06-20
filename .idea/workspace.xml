@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated README.md">
+      <change afterPath="$PROJECT_DIR$/classifier_comparison.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfcc_svm_vad.py" beforeDir="false" afterPath="$PROJECT_DIR$/mfcc_svm_vad.py" afterDir="false" />
@@ -37,6 +38,7 @@
   "keyToString": {
     "Python.audio_backend_test.executor": "Run",
     "Python.base_pyannote_test.executor": "Run",
+    "Python.classifier_comparison.executor": "Run",
     "Python.custom_vad.executor": "Run",
     "Python.dataset.executor": "Run",
     "Python.dataset_verification.executor": "Run",
@@ -169,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750435995187</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Tried improvments to VAD model, updated README.md">
+      <option name="closed" value="true" />
+      <created>1750444484358</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1750444484358</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Updated README.md">
+      <option name="closed" value="true" />
+      <created>1750444588025</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1750444588025</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +210,7 @@
     <MESSAGE value="Tested WebRTC VAD, and updated readme with results" />
     <MESSAGE value="Updated ReadME" />
     <MESSAGE value="Trained and tested custom VAD using MFCC and an SVM. Updated README.md with results." />
+    <MESSAGE value="Tried improvments to VAD model, updated README.md" />
     <MESSAGE value="Updated README.md" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>

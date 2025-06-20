@@ -104,6 +104,18 @@ While precision slightly decreased, the significant boost in recall is valuable 
 | **+ Scaler**             | 13 MFCC                         | ✅      | 0.881     | **0.884** | 0.884     | 0.884     |
 | **+ Delta + Delta-Delta**| 13 MFCC + Δ + ΔΔ (total: 39)    | ✅      | **0.905** | 0.872     | **0.954** | **0.911** |
 
+## Machine Learning Classifier Comparison
+Following the initial success of the SVM model, a comparison was conducted across several traditional machine learning classifiers using the same MFCC-based features and normalization pipeline. Each model was tested with minimal hyperparameter tuning to evaluate baseline performance. The results are shown below, sorted by F1 Score.
 
+### Classifier Performance Comparison (Sorted by F1 Score)
 
+| Model                          | Accuracy | Precision | Recall | F1 Score |
+|-------------------------------|----------|-----------|--------|----------|
+| **SVC**                       | **0.9048** | 0.8723    | **0.9535** | **0.9111** |
+| **MLPClassifier**             | **0.9048** | **0.8889** | 0.9302 | 0.9091   |
+| **RandomForestClassifier**    | 0.8452   | 0.8125    | 0.9070 | 0.8571   |
+| **KNeighborsClassifier**      | 0.8333   | 0.8718    | 0.7907 | 0.8293   |
+| **LogisticRegression**        | 0.8214   | 0.8333    | 0.8140 | 0.8235   |
+
+Of these, the **SVC** has the highest Recall and F1 score, but the **MLP classifier** has some interesting results—achieving the highest Precision and nearly matching the SVC in overall performance, suggesting potential for further improvement through tuning.
 

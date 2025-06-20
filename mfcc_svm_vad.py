@@ -6,9 +6,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-n_mfcc = 13
-sample_rate = 16000
-
 metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset/metadata_split.csv')
 train_metadata = metadata[metadata['split'].isin(['train', 'val'])]
 test_metadata = metadata[metadata['split'] == 'test']
