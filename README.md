@@ -68,7 +68,7 @@ The models were tested using the verified audio clip dataset. Evaluation metrics
 The next step was to code a bespoke VAD model using traditional machine learning techniques. 
 
 ### MFCC SVM Model
-A 2012 paper identified Mel-Frequency Cepstral Coefficients (MFCCs) pair with a Support Vector Machine (SVM) as an effective VAD. For this first attempt, 13 MFCCs were extracted for each audio clip. An SVM was then trained on a combined train + validation dataset (following the same split as outlined in the `dataset` section). This is a simplistic model on which more sophisticated attempts could be built. Despite this, this first model resulted in strong performance on the held-out test dataset:
+A 2012 paper identified **Mel-Frequency Cepstral Coefficients (MFCCs)** combined with a **Support Vector Machine (SVM)** can be effective for voice activity detection. In this first attempt, **13 MFCCs** were extracted for each audio clip. An SVM was then trained on a combined **train + validation** dataset (following the same split as outlined in the `dataset` section). While this is a relatively simple model, it lays the groundwork for more advanced approaches. Despite this, this first model resulted in strong performance on the held-out test dataset:
 - **Accuracy**: 0.798
 - **Precision**: 0.760
 - **Recall**: 0.884
