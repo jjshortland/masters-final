@@ -67,54 +67,56 @@ The models were tested using the verified audio clip dataset. Evaluation metrics
 The next step was to code a bespoke VAD model using traditional machine learning techniques. 
 
 ### MFCC SVM Model
-A 2012 paper identified **Mel-Frequency Cepstral Coefficients (MFCCs)** combined with a **Support Vector Machine (SVM)** can be effective for voice activity detection. In this first attempt, **13 MFCCs** were extracted for each audio clip. An SVM was then trained on a combined **train + validation** dataset (following the same split as outlined in the `dataset` section). While this is a relatively simple model, it lays the groundwork for more advanced approaches. Despite this, this first model resulted in strong performance on the held-out test dataset:
-- **Accuracy**: 0.798
-- **Precision**: 0.760
+A 2012 paper identified **Mel-Frequency Cepstral Coefficients (MFCCs)** combined with a **Support Vector Machine (SVM)** can be effective for voice activity detection. Following the paper, in this first attempt, **12 MFCCs** were extracted for each audio clip. An SVM was then trained on a combined **train + validation** dataset (following the same split as outlined in the `dataset` section). While this is a relatively simple model, it lays the groundwork for more advanced approaches. Despite this, this first model resulted in strong performance on the held-out test dataset:
+- **Accuracy**: 0.796
+- **Precision**: 0.745
 - **Recall**: 0.884
-- **F1 Score**: 0.817
+- **F1 Score**: 0.809
 
 This result is promising, especially for a lightweight model. The precision–recall balance indicates that the classifier correctly detects most speech clips while keeping false positives relatively low. While it doesn't reach perfect recall, the model captures the majority of speech instances and can serve as a solid foundation for further tuning or integration into an ensemble system.
 
 ### Iterative Improvements
 
+To improve from the baseline, the same paper includes two easy steps: scaling and delta + delta-delta features.
+
 #### 1. Feature Scaling  
 SVMs are sensitive to feature scale, so normalization was introduced using a standard scaler. This alone yielded a marked improvement:
 
-- **Accuracy**: 0.881  
-- **Precision**: 0.884  
+- **Accuracy**: 0.869  
+- **Precision**: 0.864  
 - **Recall**: 0.884  
-- **F1 Score**: 0.884  
+- **F1 Score**: 0.874  
 
 #### 2. Delta and Delta-Delta MFCC Features  
 To enhance the representation of speech dynamics, **Delta** (first derivative) and **Delta-Delta** (second derivative) features were added. These capture how the MFCCs change over time, increasing the total features per clip from 13 to 39. Combined with normalization, this led to further gains:
 
-- **Accuracy**: 0.905  
-- **Precision**: 0.872  
+- **Accuracy**: 0.923  
+- **Precision**: 0.911  
 - **Recall**: 0.954  
-- **F1 Score**: 0.911  
+- **F1 Score**: 0.932  
 
 While precision slightly decreased, the significant boost in recall is valuable for this task. In the context of VAD, **false negatives (missed speech)** are more harmful than **false positives**, so a higher recall is preferable.
 
 ### Model Comparison Table
 
-| Model Version            | Features Used                   | Scaling | Accuracy  | Precision | Recall    | F1 Score  |
-|--------------------------|----------------------------------|---------|-----------|-----------|-----------|-----------|
-| **Base MFCC SVM**        | 13 MFCC                         | ❌      | 0.798     | 0.760     | 0.884     | 0.817     |
-| **+ Scaler**             | 13 MFCC                         | ✅      | 0.881     | **0.884** | 0.884     | 0.884     |
-| **+ Delta + Delta-Delta**| 13 MFCC + Δ + ΔΔ (total: 39)    | ✅      | **0.905** | 0.872     | **0.954** | **0.911** |
+| Model Version            | Features Used                   | Scaling | Accuracy | Precision | Recall    | F1 Score |
+|--------------------------|----------------------------------|---------|--|-----------|-----------|--|
+| **Base MFCC SVM**        | 13 MFCC                         | ❌      | 0.796 | 0.745     | 0.884     | 0.809 |
+| **+ Scaler**             | 13 MFCC                         | ✅      | 0.869 | 0.864     | 0.884     | 0.874 |
+| **+ Delta + Delta-Delta**| 13 MFCC + Δ + ΔΔ (total: 39)    | ✅      | **0.923** | **0.911** | **0.954** | **0.932** |
 
 ## Machine Learning Classifier Comparison
-Following the initial success of the SVM model, a comparison was conducted across several traditional machine learning classifiers using the same MFCC-based features and normalization pipeline. Each model was tested with minimal hyperparameter tuning to evaluate baseline performance. The results are shown below, sorted by F1 Score.
+Following the initial success of the SVM model, a comparison was conducted across several traditional machine learning classifiers using the same MFCC-based features and normalization pipeline, but using 13 MFCC-features instead of 12. 13 MFCCs was shown to maximize the results of other classifiers. Each model was tested with minimal hyperparameter tuning to evaluate baseline performance. The results are shown below, sorted by F1 Score.
 
 ### Classifier Performance Comparison (Sorted by F1 Score)
 
-| Model                          | Accuracy | Precision | Recall | F1 Score |
-|-------------------------------|----------|-----------|--------|----------|
-| **SVC**                       | **0.9048** | 0.8723    | **0.9535** | **0.9111** |
-| **MLPClassifier**             | **0.9048** | **0.8889** | 0.9302 | 0.9091   |
-| **RandomForestClassifier**    | 0.8452   | 0.8125    | 0.9070 | 0.8571   |
-| **KNeighborsClassifier**      | 0.8333   | 0.8718    | 0.7907 | 0.8293   |
-| **LogisticRegression**        | 0.8214   | 0.8333    | 0.8140 | 0.8235   |
+| Model                          | Accuracy | Precision | Recall   | F1 Score  |
+|-------------------------------|---------|----------|----------|-----------|
+| **SVC**                       | **0.905** | 0.872    | **0.954** | **0.911** |
+| **MLPClassifier**             | **0.905** | **0.889** | 0.930    | 0.909     |
+| **RandomForestClassifier**    | 0.845   | 0.813    | 0.907    | 0.857     |
+| **KNeighborsClassifier**      | 0.833   | 0.872    | 0.791    | 0.829     |
+| **LogisticRegression**        | 0.821   | 0.833    | 0.814    | 0.824     |
 
 Of these, the **SVC** has the highest Recall and F1 score, but the **MLP classifier** has some interesting results—achieving the highest Precision and nearly matching the SVC in overall performance, suggesting potential for further improvement through tuning.
 

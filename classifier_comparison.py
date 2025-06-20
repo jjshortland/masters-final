@@ -56,15 +56,15 @@ def classifier_test(classifier):
     f1 = f1_score(y_test, y_pred, pos_label=1)
 
     print(f"{classifier} on Test Set:")
-    print(f"Accuracy : {accuracy:.4f}")
-    print(f"Precision: {precision:.4f}")
-    print(f"Recall   : {recall:.4f}")
-    print(f"F1 Score : {f1:.4f}")
+    print(f"Accuracy : {accuracy:.3f}")
+    print(f"Precision: {precision:.3f}")
+    print(f"Recall   : {recall:.3f}")
+    print(f"F1 Score : {f1:.3f}")
 
 svc = SVC(kernel="rbf", C=1.0, gamma="scale")
 classifier_test(svc)
 
-ran_f  = RandomForestClassifier(n_estimators=100, random_state=42)
+ran_f = RandomForestClassifier(n_estimators=100, random_state=42)
 classifier_test(ran_f)
 
 log_r = LogisticRegression(max_iter=1000)
@@ -73,5 +73,5 @@ classifier_test(log_r)
 knn = KNeighborsClassifier(n_neighbors=5)
 classifier_test(knn)
 
-mlp = MLPClassifier(hidden_layer_sizes=(64,), max_iter=500)
+mlp = MLPClassifier(hidden_layer_sizes=(64,), max_iter=1000)
 classifier_test(mlp)

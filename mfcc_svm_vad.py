@@ -10,7 +10,7 @@ metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/free
 train_metadata = metadata[metadata['split'].isin(['train', 'val'])]
 test_metadata = metadata[metadata['split'] == 'test']
 
-def extract_mfcc(filepath, sr=16000, n_mfcc=13):
+def extract_mfcc(filepath, sr=16000, n_mfcc=12):
     y, sr = librosa.load(filepath, sr=sr)
     mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=n_mfcc)
     delta = librosa.feature.delta(mfcc)
