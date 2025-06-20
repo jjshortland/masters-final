@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="updated README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier_comparison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfcc_svm_vad.py" beforeDir="false" afterPath="$PROJECT_DIR$/mfcc_svm_vad.py" afterDir="false" />
-    </list>
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Changed comparison, updated README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750456122868</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changed comparison, updated README.md">
+      <option name="closed" value="true" />
+      <created>1750458053207</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1750458053207</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +234,7 @@
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Compared 5 different ML classifiers, and then updated the README with the results" />
     <MESSAGE value="updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
+    <MESSAGE value="Changed comparison, updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed comparison, updated README.md" />
   </component>
 </project>

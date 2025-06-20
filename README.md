@@ -99,11 +99,11 @@ While precision slightly decreased, the significant boost in recall is valuable 
 
 ### Model Comparison Table
 
-| Model Version            | Features Used                   | Scaling | Accuracy | Precision | Recall    | F1 Score |
-|--------------------------|----------------------------------|---------|--|-----------|-----------|--|
-| **Base MFCC SVM**        | 13 MFCC                         | ❌      | 0.796 | 0.745     | 0.884     | 0.809 |
-| **+ Scaler**             | 13 MFCC                         | ✅      | 0.869 | 0.864     | 0.884     | 0.874 |
-| **+ Delta + Delta-Delta**| 13 MFCC + Δ + ΔΔ (total: 39)    | ✅      | **0.923** | **0.911** | **0.954** | **0.932** |
+| Model Version            | Features Used                | Scaling | Accuracy | Precision | Recall    | F1 Score |
+|--------------------------|------------------------------|---------|--|-----------|-----------|--|
+| **Base MFCC SVM**        | 12 MFCC                      | ❌      | 0.796 | 0.745     | 0.884     | 0.809 |
+| **+ Scaler**             | 12 MFCC                      | ✅      | 0.869 | 0.864     | 0.884     | 0.874 |
+| **+ Delta + Delta-Delta**| 12 MFCC + Δ + ΔΔ (total: 36) | ✅      | **0.923** | **0.911** | **0.954** | **0.932** |
 
 ## Machine Learning Classifier Comparison
 Following the initial success of the SVM model, a comparison was conducted across several traditional machine learning classifiers using the same MFCC-based features and normalization pipeline, but using 13 MFCC-features instead of 12. 13 MFCCs was shown to maximize the results of other classifiers. Each model was tested with minimal hyperparameter tuning to evaluate baseline performance. The results are shown below, sorted by F1 Score.
