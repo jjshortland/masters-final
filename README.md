@@ -110,13 +110,13 @@ Following the initial success of the SVM model, a comparison was conducted acros
 
 ### Classifier Performance Comparison (Sorted by F1 Score)
 
-| Model                          | Accuracy | Precision | Recall   | F1 Score  |
-|-------------------------------|---------|----------|----------|-----------|
-| **SVC**                       | **0.905** | 0.872    | **0.954** | **0.911** |
-| **MLPClassifier**             | **0.905** | **0.889** | 0.930    | 0.909     |
-| **RandomForestClassifier**    | 0.845   | 0.813    | 0.907    | 0.857     |
-| **KNeighborsClassifier**      | 0.833   | 0.872    | 0.791    | 0.829     |
-| **LogisticRegression**        | 0.821   | 0.833    | 0.814    | 0.824     |
+| Model                      | Accuracy | Precision | Recall   | F1 Score  |
+|----------------------------|---------|----------|----------|-----------|
+| **SVM**                    | **0.905** | 0.872    | **0.954** | **0.911** |
+| **MLPClassifier**          | **0.905** | **0.889** | 0.930    | 0.909     |
+| **RandomForestClassifier** | 0.845   | 0.813    | 0.907    | 0.857     |
+| **KNeighborsClassifier**   | 0.833   | 0.872    | 0.791    | 0.829     |
+| **LogisticRegression**     | 0.821   | 0.833    | 0.814    | 0.824     |
 
-Of these, the **SVC** has the highest Recall and F1 score, but the **MLP classifier** has some interesting results—achieving the highest Precision and nearly matching the SVC in overall performance, suggesting potential for further improvement through tuning.
+Of these, the **SVM** has the highest Recall and F1 score, but the **MLP classifier** has some interesting results—achieving the highest Precision and nearly matching the SVM in overall performance, suggesting potential for further improvement through tuning.
 

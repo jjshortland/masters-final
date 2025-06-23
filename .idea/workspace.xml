@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Changed comparison, updated README.md" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated README.md">
+      <change afterPath="$PROJECT_DIR$/NN_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.NN_test.executor": "Run",
     "Python.audio_backend_test.executor": "Run",
     "Python.base_pyannote_test.executor": "Run",
     "Python.classifier_comparison.executor": "Run",
@@ -207,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750458053207</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Updated README.md">
+      <option name="closed" value="true" />
+      <created>1750458999568</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1750458999568</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,10 +244,10 @@
     <MESSAGE value="Updated ReadME" />
     <MESSAGE value="Trained and tested custom VAD using MFCC and an SVM. Updated README.md with results." />
     <MESSAGE value="Tried improvments to VAD model, updated README.md" />
-    <MESSAGE value="Updated README.md" />
     <MESSAGE value="Compared 5 different ML classifiers, and then updated the README with the results" />
     <MESSAGE value="updated README.md" />
     <MESSAGE value="Changed comparison, updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed comparison, updated README.md" />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
 </project>
