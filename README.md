@@ -14,7 +14,16 @@ The tags used were:
 
 Alongside this dataset, a CSV file was generated to track the **file name and location**, and to record which of the two categories each clip belongs to. A `verified` column allows manual verification that each file is correctly categorized based on its content.
 
-The current dataset consists of **411 non-speech clips** and **436 speech clips**, for a total of **847 clips**. These were selected from an initial pool of **1173 clips** (751 speech and 422 non-speech) that were **manually verified**. A greater variety of speech clips were intentionally included, due to the wide range of **human speech characteristics and contexts** that the final model will need to handle, whereas the **non-speech domain** is comparatively more homogeneous. The **verification process** ensured that only clips genuinely containing human speech (or non-speech) were retained, excluding any that were **mis-tagged**.
+The final dataset consists of **411 non-speech clips** and **436 speech clips**, for a total of **847 clips**. These were selected from an initial pool of **1173 clips** (751 speech and 422 non-speech) that were **manually verified**. A greater variety of speech clips were intentionally included, due to the wide range of **human speech characteristics and contexts** that the final model will need to handle, whereas the **non-speech domain** is comparatively more homogeneous. The **verification process** ensured that only clips genuinely containing human speech (or non-speech) were retained, excluding any that were **mis-tagged**. 
+
+### Dataset Access
+The dataset used in this project is publicly available on Zenodo, including all clips and the metadata csv file:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15731210.svg)](https://doi.org/10.5281/zenodo.15731210)
+
+
+
+### Dataset split
 
 Finally, the dataset was split into **train/validation/test** sets to enable a proper machine learning workflow. The split was performed at this stage to allow for consistent comparisons between different solutions. An **80% train**, **10% validation**, and **10% test** split was used. The split was stratified within the **speech** and **non-speech** categories to ensure that each subset maintained the same class balance.
 
