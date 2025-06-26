@@ -44,7 +44,7 @@ Both datasets and the corresponding `metadata.csv` file used in this project are
 - **The original dataset**, without a train/test/val split: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15731210.svg)](https://doi.org/10.5281/zenodo.15731210)
 - **5-second segment dataset**, after the train/test/val split: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15750758.svg)](https://doi.org/10.5281/zenodo.15750758)
 
-## Pre-Trained VAD Testing
+## Pre-Trained VAD Testing: Original Dataset
 
 Three different pre-trained Voice Activity Detectors (VADs) were tested on a manually verified dataset containing both **speech** and **non-speech** audio clips. The goal was to evaluate their out-of-the-box performance in distinguishing human speech from environmental audio.
 

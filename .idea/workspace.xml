@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="split dataset into 5 seconds, to make a larger dataset (sticking with pre-made train/test/val splits). Modified existing verification process for new dataset.">
-      <change afterPath="$PROJECT_DIR$/metadata_finalizing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_verification.py" afterDir="false" />
-    </list>
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Split the dataset to 5 second segments, re-verified, wrote about it in my README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -251,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750954427233</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Split the dataset to 5 second segments, re-verified, wrote about it in my README.md">
+      <option name="closed" value="true" />
+      <created>1750976758934</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1750976758934</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,6 +284,7 @@
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Added dataset to Zenodo, updated ReadMe to reflect this" />
     <MESSAGE value="split dataset into 5 seconds, to make a larger dataset (sticking with pre-made train/test/val splits). Modified existing verification process for new dataset." />
-    <option name="LAST_COMMIT_MESSAGE" value="split dataset into 5 seconds, to make a larger dataset (sticking with pre-made train/test/val splits). Modified existing verification process for new dataset." />
+    <MESSAGE value="Split the dataset to 5 second segments, re-verified, wrote about it in my README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Split the dataset to 5 second segments, re-verified, wrote about it in my README.md" />
   </component>
 </project>
