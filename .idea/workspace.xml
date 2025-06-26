@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated README.md">
-      <change afterPath="$PROJECT_DIR$/zenodo_dataset_cleanup.py" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Added dataset to Zenodo, updated ReadMe to reflect this">
+      <change afterPath="$PROJECT_DIR$/NN_focus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_clips.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_verification.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +36,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.NN_focus.executor": "Run",
+    "Python.NN_improvement.executor": "Run",
     "Python.NN_test.executor": "Run",
     "Python.audio_backend_test.executor": "Run",
     "Python.base_pyannote_test.executor": "Run",
@@ -41,6 +45,7 @@
     "Python.custom_vad.executor": "Run",
     "Python.dataset.executor": "Run",
     "Python.dataset_verification.executor": "Run",
+    "Python.five_second_clips.executor": "Run",
     "Python.fixing_metadata.executor": "Run",
     "Python.mfcc_svm_vad.executor": "Run",
     "Python.one_audio_test.executor": "Run",
@@ -228,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750677555471</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added dataset to Zenodo, updated ReadMe to reflect this">
+      <option name="closed" value="true" />
+      <created>1750779898747</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1750779898747</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +269,7 @@
     <MESSAGE value="updated README.md" />
     <MESSAGE value="Changed comparison, updated README.md" />
     <MESSAGE value="Updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
+    <MESSAGE value="Added dataset to Zenodo, updated ReadMe to reflect this" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dataset to Zenodo, updated ReadMe to reflect this" />
   </component>
 </project>
