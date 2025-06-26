@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Added dataset to Zenodo, updated ReadMe to reflect this">
-      <change afterPath="$PROJECT_DIR$/NN_focus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/five_second_clips.py" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="split dataset into 5 seconds, to make a larger dataset (sticking with pre-made train/test/val splits). Modified existing verification process for new dataset.">
+      <change afterPath="$PROJECT_DIR$/metadata_finalizing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_verification.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,12 +41,14 @@
     "Python.NN_test.executor": "Run",
     "Python.audio_backend_test.executor": "Run",
     "Python.base_pyannote_test.executor": "Run",
+    "Python.changing_metadata.executor": "Run",
     "Python.classifier_comparison.executor": "Run",
     "Python.custom_vad.executor": "Run",
     "Python.dataset.executor": "Run",
     "Python.dataset_verification.executor": "Run",
     "Python.five_second_clips.executor": "Run",
     "Python.fixing_metadata.executor": "Run",
+    "Python.metadata_finalizing.executor": "Run",
     "Python.mfcc_svm_vad.executor": "Run",
     "Python.one_audio_test.executor": "Run",
     "Python.silero_testing.executor": "Run",
@@ -241,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750779898747</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="split dataset into 5 seconds, to make a larger dataset (sticking with pre-made train/test/val splits). Modified existing verification process for new dataset.">
+      <option name="closed" value="true" />
+      <created>1750954427233</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1750954427233</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +280,7 @@
     <MESSAGE value="Changed comparison, updated README.md" />
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Added dataset to Zenodo, updated ReadMe to reflect this" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dataset to Zenodo, updated ReadMe to reflect this" />
+    <MESSAGE value="split dataset into 5 seconds, to make a larger dataset (sticking with pre-made train/test/val splits). Modified existing verification process for new dataset." />
+    <option name="LAST_COMMIT_MESSAGE" value="split dataset into 5 seconds, to make a larger dataset (sticking with pre-made train/test/val splits). Modified existing verification process for new dataset." />
   </component>
 </project>

@@ -9,12 +9,11 @@ batch_size = 50
 
 # Load data
 df = pd.read_csv(metadata_file)
-df.loc[df['label'] == 'non-speech', 'verified'] = 'True'
-df.to_csv(metadata_file, index=False)
+
+print(df.shape)
 
 # Filter unverified clips
-unverified_df = df[df['verified'].astype(str) == 'no'].sort_values('label')
-unverified_df = df[df['label'] == 'speech']
+unverified_df = df[df['verified'].astype(str) == 'no']
 total_batches = (len(unverified_df) + batch_size - 1) // batch_size
 
 print(f"\nTotal unverified clips: {len(unverified_df)}")
