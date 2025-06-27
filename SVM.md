@@ -42,10 +42,32 @@ This model **achieved perfect recall** while maintaining high precision, making 
 ### Interation Comparison Table
 
 | Model Version             | Features Used                | Scaling | Accuracy  | Precision | Recall    | F1 Score  |
-|---------------------------|------------------------------|--------|-----------|-----------|-----------|-----------|
-| **Base MFCC SVM**         | 12 MFCC                      | ❌      | 0.796     | 0.745     | 0.884     | 0.809     |
-| **+ Scaler**              | 12 MFCC                      | ✅      | 0.869     | 0.864     | 0.884     | 0.874     |
-| **+ Delta + Delta-Delta** | 12 MFCC + Δ + ΔΔ (total: 36) | ✅      | 0.923     | 0.911     | 0.954     | 0.932     |
-| **+ Std Feature**         | 12 MFCC + Δ + ΔΔ (total: 72) | ✅      | **0.976** | **0.956** | **1.000** | **0.977** |
+|---------------------------|------------------------------|---------|-----------|-----------|-----------|-----------|
+| **Base MFCC SVM**         | 12 MFCC                      | ❌       | 0.796     | 0.745     | 0.884     | 0.809     |
+| **+ Scaler**              | 12 MFCC                      | ✅       | 0.869     | 0.864     | 0.884     | 0.874     |
+| **+ Delta + Delta-Delta** | 12 MFCC + Δ + ΔΔ (total: 36) | ✅       | 0.923     | 0.911     | 0.954     | 0.932     |
+| **+ Std Feature**         | 12 MFCC + Δ + ΔΔ (total: 72) | ✅       | **0.976** | **0.956** | **1.000** | **0.977** |
 
+## New Dataset, and "Realistic" Dataset Testing
+Following the creation of the 5-second dataset (see dataset section for more information), the final iteration the SVM was tested again. This time, testing was done between 12 and 13 MFCC features. Both results are extremely strong, and very similar, but the 13 MFCC version was chosen due to the marginally higher **accuracy, precision,** and **F1 score**.
+
+| # of MFCCs | Accuracy  | Precision | Recall | F1 Score  |
+|------------|-----------|-----------|--------|-----------|
+| **12**     | 0.973     | 0.962     | 0.980  | 0.971     |
+| **13**     | **0.977** | **0.971** | 0.980  | **0.976** |
+
+### Realistic Dataset
+The final model was tested using a "realistic" dataset, that contained a training split that was 10%/90% speech/non_speech. This was done to mimic the final conditions that the model will be used in, an environment without much speech. Across 50 randomized runs, the model consistently achieves 97% accuracy, 97.7% recall, and 88% F1 score.
+
+The stats from the 50 runs are shown below:
+
+|        | Accuracy | Precision | Recall   | F1 Score |
+|--------|----------|-----------|----------|----------|
+| **Mean**   | **0.974615** | **0.808750** | **0.976923** | **0.884729** |
+| Std    | 0.003561 | 0.005786  | 0.035608 | 0.018243 |
+| Min    | 0.969231 | 0.800000  | 0.923077 | 0.857143 |
+| 25%    | 0.969231 | 0.800000  | 0.923077 | 0.857143 |
+| 50%    | 0.976923 | 0.812500  | 1.000000 | 0.896552 |
+| 75%    | 0.976923 | 0.812500  | 1.000000 | 0.896552 |
+| Max    | 0.976923 | 0.812500  | 1.000000 | 0.896552 |
 

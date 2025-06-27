@@ -10,7 +10,7 @@ def build_realistic_test_set(df, speech_ratio=0.1):
     non_speech_size = len(test_non_speech)
     speech_clips_wanted = int((speech_ratio * non_speech_size) / (1 - speech_ratio))
 
-    speech_subset = test_speech.sample(n=speech_clips_wanted, random_state=42)
-    balanced_test_df = pd.concat([speech_subset, test_non_speech, train_df, val_df]).sample(frac=1, random_state=42).reset_index(drop=True)
+    speech_subset = test_speech.sample(n=speech_clips_wanted)
+    balanced_test_df = pd.concat([speech_subset, test_non_speech, train_df, val_df]).sample(frac=1).reset_index(drop=True)
     return balanced_test_df
 

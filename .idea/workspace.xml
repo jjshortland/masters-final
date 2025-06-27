@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="wrote a function that changes dataset to reflect real-world testing conditions (low % of hits/speech), tested svm model">
-      <change afterPath="$PROJECT_DIR$/SVM.md" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Created SVM summary page">
+      <change afterPath="$PROJECT_DIR$/final_svm_randomness_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/SVM.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfcc_svm_vad.py" beforeDir="false" afterPath="$PROJECT_DIR$/mfcc_svm_vad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realistic_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/realistic_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
     "Python.custom_vad.executor": "Run",
     "Python.dataset.executor": "Run",
     "Python.dataset_verification.executor": "Run",
+    "Python.final_svm_randomness_test.executor": "Run",
     "Python.five_second_clips.executor": "Run",
     "Python.fixing_metadata.executor": "Run",
     "Python.metadata_finalizing.executor": "Run",
@@ -275,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751021092380</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Created SVM summary page">
+      <option name="closed" value="true" />
+      <created>1751041378500</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1751041378500</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,6 +319,7 @@
     <MESSAGE value="Split the dataset to 5 second segments, re-verified, wrote about it in my README.md" />
     <MESSAGE value="updated readme" />
     <MESSAGE value="wrote a function that changes dataset to reflect real-world testing conditions (low % of hits/speech), tested svm model" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrote a function that changes dataset to reflect real-world testing conditions (low % of hits/speech), tested svm model" />
+    <MESSAGE value="Created SVM summary page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created SVM summary page" />
   </component>
 </project>
