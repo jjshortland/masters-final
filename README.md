@@ -1,6 +1,11 @@
 # Masters Final
 The final project for my MSc Data Science and Artificial Intelligence degree. In collaboration with the **Sensing the Forest** organization, this project will aim to take a livestreamed audio soundscape of a forest and remove human voices, before publishing it to the website for the public to enjoy. 
 
+## 📄 Project Docs
+
+- 🔍 [SVM Modeling Details](docs/model_svm.md)
+- 📦 [Dataset Description](docs/dataset.md)
+
 ## Dataset
 
 The dataset was produced using the Freesound.org API. Audio clips were downloaded and converted into `.wav` files.

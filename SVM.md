@@ -49,7 +49,7 @@ This model **achieved perfect recall** while maintaining high precision, making 
 | **+ Std Feature**         | 12 MFCC + Δ + ΔΔ (total: 72) | ✅       | **0.976** | **0.956** | **1.000** | **0.977** |
 
 ## New Dataset, and "Realistic" Dataset Testing
-Following the creation of the 5-second dataset (see dataset section for more information), the final iteration the SVM was tested again. This time, testing was done between 12 and 13 MFCC features. Both results are extremely strong, and very similar, but the 13 MFCC version was chosen due to the marginally higher **accuracy, precision,** and **F1 score**.
+Following the creation of the 5-second dataset (see dataset section for more information), the final iteration of the SVM model was tested again. This time, testing was done between 12 and 13 MFCC features. Both results are extremely strong, and very similar, but the 13 MFCC version was chosen due to the marginally higher **accuracy, precision,** and **F1 score**.
 
 | # of MFCCs | Accuracy  | Precision | Recall | F1 Score  |
 |------------|-----------|-----------|--------|-----------|
@@ -57,7 +57,7 @@ Following the creation of the 5-second dataset (see dataset section for more inf
 | **13**     | **0.977** | **0.971** | 0.980  | **0.976** |
 
 ### Realistic Dataset
-The final model was tested using a "realistic" dataset, that contained a training split that was 10%/90% speech/non_speech. This was done to mimic the final conditions that the model will be used in, an environment without much speech. Across 50 randomized runs, the model consistently achieves 97% accuracy, 97.7% recall, and 88% F1 score.
+The final model was tested using a "realistic" dataset, that contained a training split that was 10%/90% speech/non_speech. In the case of this dataset, the training subset was made up of 130 audio clips, 13 of which were labeled speech. This was done to mimic the final conditions that the model will be used in, an environment without much speech. Across 50 randomized runs, the model consistently achieves 97% accuracy, 97.7% recall, and 88% F1 score.
 
 The stats from the 50 runs are shown below:
 
