@@ -16,7 +16,7 @@ metadata = build_realistic_test_set(metadata, 0.1)
 train_metadata = metadata[metadata['split'].isin(['train', 'val'])]
 test_metadata = metadata[metadata['split'] == 'test']
 
-def extract_mfcc(filepath, sr=16000, n_mfcc=13):
+def extract_mfcc(filepath, sr=16000, n_mfcc=12):
     y, sr = librosa.load(filepath, sr=sr)
     mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=n_mfcc)
     delta = librosa.feature.delta(mfcc)
@@ -51,7 +51,7 @@ X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
 param_grid = {
-    'C': [1],
+    'C': [1.0],
     'gamma': ['scale'],
     'kernel': ['rbf']
 }
