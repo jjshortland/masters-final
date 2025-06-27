@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Added docs folder">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="made index page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,7 +305,31 @@
       <option name="project" value="LOCAL" />
       <updated>1751053334446</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fixed links">
+      <option name="closed" value="true" />
+      <created>1751053730762</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1751053730762</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fixed links">
+      <option name="closed" value="true" />
+      <created>1751053759275</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1751053759275</updated>
+    </task>
+    <task id="LOCAL-00031" summary="made index page">
+      <option name="closed" value="true" />
+      <created>1751053999294</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1751053999294</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,6 +366,8 @@
     <MESSAGE value="Updated SVM summary page, made robust random testing" />
     <MESSAGE value="Updated README.md and SVM.md" />
     <MESSAGE value="Added docs folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added docs folder" />
+    <MESSAGE value="Fixed links" />
+    <MESSAGE value="made index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="made index page" />
   </component>
 </project>
