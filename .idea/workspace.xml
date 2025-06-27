@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated SVM summary page, made robust random testing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/SVM.md" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated README.md and SVM.md">
+      <change beforePath="$PROJECT_DIR$/SVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/SVM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dataset.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751047543684</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Updated README.md and SVM.md">
+      <option name="closed" value="true" />
+      <created>1751053152659</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1751053152659</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -326,6 +334,7 @@
     <MESSAGE value="wrote a function that changes dataset to reflect real-world testing conditions (low % of hits/speech), tested svm model" />
     <MESSAGE value="Created SVM summary page" />
     <MESSAGE value="Updated SVM summary page, made robust random testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated SVM summary page, made robust random testing" />
+    <MESSAGE value="Updated README.md and SVM.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md and SVM.md" />
   </component>
 </project>
