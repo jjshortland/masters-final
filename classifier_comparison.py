@@ -10,11 +10,11 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-def classifier_test(classifier):
-    metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset/metadata_split.csv')
-    train_metadata = metadata[metadata['split'].isin(['train', 'val'])]
-    test_metadata = metadata[metadata['split'] == 'test']
+metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_freesound_dataset/metadata.csv')
+train_metadata = metadata[metadata['split'].isin(['train', 'val'])]
+test_metadata = metadata[metadata['split'] == 'test']
 
+def classifier_test(classifier):
     def extract_mfcc(filepath, sr=16000, n_mfcc=13):
         y, sr = librosa.load(filepath, sr=sr)
         mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=n_mfcc)
@@ -24,14 +24,14 @@ def classifier_test(classifier):
         mfcc_mean = np.mean(combined, axis=1)
         return mfcc_mean
 
-    base_dir = '/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset'
+    base_dir = '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_freesound_dataset'
 
     def prepare_set(df):
         X = []
         y = []
         for _, row in df.iterrows():
             label = row['label']
-            filepath = os.path.join(base_dir, label, row['filepath'])
+            filepath = os.path.join(base_dir, row['filepath'])
             try:
                 features = extract_mfcc(filepath)
                 X.append(features)
