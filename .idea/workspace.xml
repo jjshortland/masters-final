@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated README.md and SVM.md">
-      <change beforePath="$PROJECT_DIR$/SVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/SVM.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dataset.md" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Added docs folder">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/testing_results" />
     </key>
   </component>
@@ -299,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751053152659</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added docs folder">
+      <option name="closed" value="true" />
+      <created>1751053334446</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1751053334446</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,6 +343,7 @@
     <MESSAGE value="Created SVM summary page" />
     <MESSAGE value="Updated SVM summary page, made robust random testing" />
     <MESSAGE value="Updated README.md and SVM.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md and SVM.md" />
+    <MESSAGE value="Added docs folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added docs folder" />
   </component>
 </project>

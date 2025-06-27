@@ -3,7 +3,7 @@ The final project for my MSc Data Science and Artificial Intelligence degree. In
 
 ## 📄 Project Docs
 
-- 🔍 [SVM Modeling Details](docs/svm.md)
+- 🔍 [SVM Modeling Details](docs/SVM.md)
 - 📦 [Dataset Description](docs/dataset.md)
 
 ## Dataset
