@@ -71,3 +71,6 @@ The stats from the 50 runs are shown below:
 | 75%    | 0.976923 | 0.812500  | 1.000000 | 0.896552 |
 | Max    | 0.976923 | 0.812500  | 1.000000 | 0.896552 |
 
+The results show that the worst the model did in 50 attempts was miss **1 out of 13** speech clips, and averaged a success rate of **12.7 out of 13** speech clips correctly identified. 
+
+The precision is potentially a little low, **~80%** means that **20% of the clips the model identified as speech was actually non-speech**. While this can certainly be addressed, within the context of a VAD focusing on high recall (successfully catching as much speech as possible) is generally more important that a high precision (over-estimating some non-speech as speech). Future iterations should look for improvements in precision, but not at the expense of much recall.

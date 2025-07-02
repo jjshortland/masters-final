@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated index and dataset files, made the 'website' flow a little nicer" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Played around with link placement">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/SVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/SVM.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -353,7 +356,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751059369639</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Played around with link placement">
+      <option name="closed" value="true" />
+      <created>1751059783995</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1751059783995</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Played around with link placement">
+      <option name="closed" value="true" />
+      <created>1751060003142</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1751060003142</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +387,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated markdowns for dataset and readme, split the dataset into train/val/test ready for machine learning implimentation/training" />
     <MESSAGE value="Dataset update" />
     <MESSAGE value="temporary commit before rebase" />
     <MESSAGE value="updated base VAD tests" />
@@ -393,6 +411,7 @@
     <MESSAGE value="made index page" />
     <MESSAGE value="Updated index and dataset files" />
     <MESSAGE value="Updated index and dataset files, made the 'website' flow a little nicer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated index and dataset files, made the 'website' flow a little nicer" />
+    <MESSAGE value="Played around with link placement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Played around with link placement" />
   </component>
 </project>
