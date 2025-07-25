@@ -1,19 +1,14 @@
-import os
+import joblib
 import pandas as pd
 import numpy as np
 import librosa
-from sklearn.preprocessing import StandardScaler
-from sklearn.svm import SVC
+import os
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-from sklearn.model_selection import GridSearchCV
-import joblib
-from realistic_test import build_realistic_test_set
+
+loaded_model = joblib.load('vad_svm_model.joblib')
+loaded_scaler = joblib.load('vad_scaler.joblib')
 
 metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_freesound_dataset/metadata.csv')
-
-# metadata = build_realistic_test_set(metadata, 0.1)
-
-train_metadata = metadata[metadata['split'].isin(['train', 'val'])]
 test_metadata = metadata[metadata['split'] == 'test']
 
 
@@ -47,27 +42,10 @@ def prepare_set(df):
     return np.array(x), np.array(y)
 
 
-X_train, y_train = prepare_set(train_metadata)
 X_test, y_test = prepare_set(test_metadata)
 
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
-
-param_grid = {
-    'C': [1.0],
-    'gamma': ['scale'],
-    'kernel': ['rbf']
-}
-
-grid = GridSearchCV(SVC(), param_grid, scoring='f1', cv=5)
-grid.fit(X_train, y_train)
-
-print("Best parameters:", grid.best_params_)
-
-# Evaluate best model
-best_model = grid.best_estimator_
-y_pred = best_model.predict(X_test)
+X_test = loaded_scaler.transform(X_test)
+y_pred = loaded_model.predict(X_test)
 
 accuracy = accuracy_score(y_test, y_pred)
 precision = precision_score(y_test, y_pred, pos_label=1)
@@ -79,6 +57,3 @@ print(f"Accuracy : {accuracy:.4f}")
 print(f"Precision: {precision:.4f}")
 print(f"Recall   : {recall:.4f}")
 print(f"F1 Score : {f1:.4f}")
-
-joblib.dump(best_model, 'vad_svm_model.joblib')
-joblib.dump(scaler, 'vad_scaler.joblib')
