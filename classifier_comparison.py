@@ -14,6 +14,7 @@ metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/five
 train_metadata = metadata[metadata['split'].isin(['train', 'val'])]
 test_metadata = metadata[metadata['split'] == 'test']
 
+
 def classifier_test(classifier):
     def extract_mfcc(filepath, sr=16000, n_mfcc=13):
         y, sr = librosa.load(filepath, sr=sr)
@@ -60,6 +61,7 @@ def classifier_test(classifier):
     print(f"Precision: {precision:.3f}")
     print(f"Recall   : {recall:.3f}")
     print(f"F1 Score : {f1:.3f}")
+
 
 svc = SVC(kernel="rbf", C=1.0, gamma="scale")
 classifier_test(svc)

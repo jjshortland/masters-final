@@ -2,7 +2,8 @@ import pandas as pd
 import os
 from pydub import AudioSegment
 
-original_metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset/metadata_split.csv')
+original_metadata = (
+    pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset/metadata_split.csv'))
 base_dir = '/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset'
 output_folder = '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_freesound_dataset'
 metadata_rows = []
@@ -32,9 +33,3 @@ for _, row in original_metadata.iterrows():
 
 new_metadata = pd.DataFrame(metadata_rows)
 new_metadata.to_csv(os.path.join(output_folder, 'metadata.csv'), index=False)
-
-
-
-
-
-

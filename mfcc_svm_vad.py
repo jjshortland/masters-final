@@ -32,7 +32,7 @@ def extract_mfcc(filepath, sr=16000, n_mfcc=13):
 base_dir = '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_freesound_dataset'
 
 
-def prepare_set(df):
+def prepare_set(df, base_dir):
     x = []
     y = []
     for _, row in df.iterrows():
@@ -46,9 +46,20 @@ def prepare_set(df):
             print(f'Failed to process {filepath}: {e}.')
     return np.array(x), np.array(y)
 
+def prepare_set_no_label(df, base_dir):
+    x = []
+    for _, row in df.iterrows():
+        filepath = os.path.join(base_dir, row['file_name'])
+        try:
+            features = extract_mfcc(filepath)
+            x.append(features)
+        except Exception as e:
+            print(f'Failed to process {filepath}: {e}.')
+    return np.array(x)
 
-X_train, y_train = prepare_set(train_metadata)
-X_test, y_test = prepare_set(test_metadata)
+
+X_train, y_train = prepare_set(train_metadata, base_dir)
+X_test, y_test = prepare_set(test_metadata, base_dir)
 
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
@@ -80,5 +91,19 @@ print(f"Precision: {precision:.4f}")
 print(f"Recall   : {recall:.4f}")
 print(f"F1 Score : {f1:.4f}")
 
-joblib.dump(best_model, 'vad_svm_model.joblib')
-joblib.dump(scaler, 'vad_scaler.joblib')
+# joblib.dump(best_model, 'vad_svm_model.joblib')
+# joblib.dump(scaler, 'vad_scaler.joblib')
+
+paula_metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_paula_recordings/metadata.csv')
+paula_base_dir = '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_paula_recordings'
+
+X_paula = prepare_set_no_label(paula_metadata, paula_base_dir)
+X_paula_scaled = scaler.transform(X_paula)
+y_paula_pred = best_model.predict(X_paula_scaled)
+
+paula_metadata['predicted_label'] = y_paula_pred
+
+paula_metadata.to_csv(
+    '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_paula_recordings/metadata_with_preds.csv',
+    index=False
+)
