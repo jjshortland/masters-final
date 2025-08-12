@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.model_selection import GridSearchCV
+from functions import prepare_set_filename
 import joblib
 from realistic_test import build_realistic_test_set
 
@@ -66,7 +67,7 @@ X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
 param_grid = {
-    'C': [1.0],
+    'C': [1],
     'gamma': ['scale'],
     'kernel': ['rbf']
 }
@@ -94,16 +95,20 @@ print(f"F1 Score : {f1:.4f}")
 # joblib.dump(best_model, 'vad_svm_model.joblib')
 # joblib.dump(scaler, 'vad_scaler.joblib')
 
-paula_metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_paula_recordings/metadata.csv')
+paula_metadata = pd.read_csv('/Users/jamesshortland/Desktop/labels/complete_annotations.csv')
 paula_base_dir = '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_paula_recordings'
 
-X_paula = prepare_set_no_label(paula_metadata, paula_base_dir)
+X_paula, y_paula = prepare_set_filename(paula_metadata, paula_base_dir)
 X_paula_scaled = scaler.transform(X_paula)
 y_paula_pred = best_model.predict(X_paula_scaled)
 
-paula_metadata['predicted_label'] = y_paula_pred
+accuracy = accuracy_score(y_paula, y_paula_pred)
+precision = precision_score(y_paula, y_paula_pred, pos_label=1)
+recall = recall_score(y_paula, y_paula_pred, pos_label=1)
+f1 = f1_score(y_paula, y_paula_pred, pos_label=1)
 
-paula_metadata.to_csv(
-    '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_paula_recordings/metadata_with_preds.csv',
-    index=False
-)
+print("SVM Evaluation on Paula Test Set:")
+print(f"Accuracy : {accuracy:.4f}")
+print(f"Precision: {precision:.4f}")
+print(f"Recall   : {recall:.4f}")
+print(f"F1 Score : {f1:.4f}")

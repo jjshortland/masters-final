@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Saved model using joblib, tested model was saved correctly">
-      <change afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live_dataset_split.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paula_audio_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamlit_annotation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamlit_annotations_updated.py" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Checked model against new &quot;real&quot; dataset, without much success due to poor generalization. Set up system to manually label new dataset more efficiently">
+      <change afterPath="$PROJECT_DIR$/new_training_split.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real_data_classifier_comparison.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real_data_vad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real_dataset_annotations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real_dataset_split.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier_comparison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/five_second_clips.py" beforeDir="false" afterPath="$PROJECT_DIR$/five_second_clips.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/joblib_model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/joblib_model_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfcc_svm_vad.py" beforeDir="false" afterPath="$PROJECT_DIR$/mfcc_svm_vad.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,39 +38,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.NN_focus.executor&quot;: &quot;Run&quot;,
-    &quot;Python.NN_improvement.executor&quot;: &quot;Run&quot;,
-    &quot;Python.NN_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.audio_backend_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.base_pyannote_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.changing_metadata.executor&quot;: &quot;Run&quot;,
-    &quot;Python.classifier_comparison.executor&quot;: &quot;Run&quot;,
-    &quot;Python.custom_vad.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataset_verification.executor&quot;: &quot;Run&quot;,
-    &quot;Python.final_svm_randomness_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.five_second_clips.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fixing_metadata.executor&quot;: &quot;Run&quot;,
-    &quot;Python.joblib_model_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.live_dataset_split.executor&quot;: &quot;Run&quot;,
-    &quot;Python.metadata_finalizing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mfcc_svm_vad.executor&quot;: &quot;Run&quot;,
-    &quot;Python.one_audio_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.paula_audio_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.realistic_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.silero_testing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_comparison.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_test_val_split.executor&quot;: &quot;Run&quot;,
-    &quot;Python.vad_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.webrtc_base_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zenodo_dataset_cleanup.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.NN_focus.executor": "Run",
+    "Python.NN_improvement.executor": "Run",
+    "Python.NN_test.executor": "Run",
+    "Python.audio_backend_test.executor": "Run",
+    "Python.base_pyannote_test.executor": "Run",
+    "Python.changing_metadata.executor": "Run",
+    "Python.classifier_comparison.executor": "Run",
+    "Python.custom_vad.executor": "Run",
+    "Python.dataset.executor": "Run",
+    "Python.dataset_verification.executor": "Run",
+    "Python.final_svm_randomness_test.executor": "Run",
+    "Python.five_second_clips.executor": "Run",
+    "Python.fixing_metadata.executor": "Run",
+    "Python.joblib_model_test.executor": "Run",
+    "Python.live_dataset_split.executor": "Run",
+    "Python.metadata_finalizing.executor": "Run",
+    "Python.mfcc_svm_vad.executor": "Run",
+    "Python.new_training_split.executor": "Run",
+    "Python.one_audio_test.executor": "Run",
+    "Python.paula_audio_test.executor": "Run",
+    "Python.real_data_classifier_comparison.executor": "Run",
+    "Python.real_data_vad.executor": "Run",
+    "Python.real_dataset_annotations.executor": "Run",
+    "Python.real_dataset_split.executor": "Run",
+    "Python.realistic_test.executor": "Run",
+    "Python.silero_testing.executor": "Run",
+    "Python.test_comparison.executor": "Run",
+    "Python.train_test_val_split.executor": "Run",
+    "Python.vad_test.executor": "Run",
+    "Python.webrtc_base_test.executor": "Run",
+    "Python.zenodo_dataset_cleanup.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -400,7 +403,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753439786888</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Checked model against new &quot;real&quot; dataset, without much success due to poor generalization. Set up system to manually label new dataset more efficiently">
+      <option name="closed" value="true" />
+      <created>1753891531599</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1753891531599</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +426,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated base VAD tests" />
     <MESSAGE value="Tested WebRTC VAD, and updated readme with results" />
     <MESSAGE value="Updated ReadME" />
     <MESSAGE value="Trained and tested custom VAD using MFCC and an SVM. Updated README.md with results." />
@@ -440,6 +450,7 @@
     <MESSAGE value="Played around with link placement" />
     <MESSAGE value="Updated SVM.md" />
     <MESSAGE value="Saved model using joblib, tested model was saved correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saved model using joblib, tested model was saved correctly" />
+    <MESSAGE value="Checked model against new &quot;real&quot; dataset, without much success due to poor generalization. Set up system to manually label new dataset more efficiently" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checked model against new &quot;real&quot; dataset, without much success due to poor generalization. Set up system to manually label new dataset more efficiently" />
   </component>
 </project>

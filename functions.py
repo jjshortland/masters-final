@@ -13,12 +13,12 @@ def extract_mfcc(filepath, sr=16000, n_mfcc=13):
     features = np.concatenate([mfcc_mean, mfcc_std])
     return features
 
-def prepare_set(df, base_dir):
+def prepare_set_filename(df, base_dir):
     x = []
     y = []
     for _, row in df.iterrows():
         label = row['label']
-        filepath = os.path.join(base_dir, row['filepath'])
+        filepath = os.path.join(base_dir, row['filename'])
         try:
             features = extract_mfcc(filepath)
             x.append(features)
