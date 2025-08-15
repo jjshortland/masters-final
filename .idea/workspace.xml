@@ -4,15 +4,1202 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Checked model against new &quot;real&quot; dataset, without much success due to poor generalization. Set up system to manually label new dataset more efficiently">
-      <change afterPath="$PROJECT_DIR$/new_training_split.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real_data_classifier_comparison.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real_data_vad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real_dataset_annotations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real_dataset_split.py" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="working with the new real-life data, playing with different models">
+      <change afterPath="$PROJECT_DIR$/docs/poor_generalization.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/real_data.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/101811_entering_local_bar_with_conversations_and_TV.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/101811_entering_local_bar_with_conversations_and_TV.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/101811_entering_local_bar_with_conversations_and_TV.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103000_milton_intervview_1991.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103000_milton_intervview_1991.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103000_milton_intervview_1991.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103000_milton_intervview_1991.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103000_milton_intervview_1991.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103385_local_teenage_girls220810.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103385_local_teenage_girls220810.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103385_local_teenage_girls220810.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103385_local_teenage_girls220810.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103385_local_teenage_girls220810.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103390_talk_about_compensation220810.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103390_talk_about_compensation220810.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103390_talk_about_compensation220810.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103390_talk_about_compensation220810.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/103390_talk_about_compensation220810.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/110398_2sujkowski_cim2010.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/110398_2sujkowski_cim2010.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/110398_2sujkowski_cim2010.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/115523_compilation_01.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/115523_compilation_01.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/115523_compilation_01.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/115523_compilation_01.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/115556_Correct_Answer_Father.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/120396_sw_FreeMusicVariations.aiff_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/120396_sw_FreeMusicVariations.aiff_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/120396_sw_FreeMusicVariations.aiff_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/120396_sw_FreeMusicVariations.aiff_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/120444_Free_Music.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/120444_Free_Music.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/120444_Free_Music.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/120444_Free_Music.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/125717_Chinatown_-_Open_Air_Market_-_Conversation_1_(Radiation).aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/129351_Platform_4_for_the_0700h_to_Reading.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/129351_Platform_4_for_the_0700h_to_Reading.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/129351_Platform_4_for_the_0700h_to_Reading.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/129351_Platform_4_for_the_0700h_to_Reading.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/142023_FireworksAndPeople2.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/142023_FireworksAndPeople2.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/145481_0002_Information_metro_next_station_Sindap_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/145481_0002_Information_metro_next_station_Sindap_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/145481_0002_Information_metro_next_station_Sindap_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/145481_0002_Information_metro_next_station_Sindap_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/14637_TheAmbientSounds.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/14637_TheAmbientSounds.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/14637_TheAmbientSounds.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/14637_TheAmbientSounds.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/14637_TheAmbientSounds.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/151602_doubt_questions_problems_uncertainty_confusion_cornered_trapped.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/151602_doubt_questions_problems_uncertainty_confusion_cornered_trapped.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/151603_but_what_if_no_mmh_I_think_I_cld_Im_not_so_sure.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/151603_but_what_if_no_mmh_I_think_I_cld_Im_not_so_sure.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/151604_ah_yes_eureka_I_got_it_solution_answer_clarity.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/151604_ah_yes_eureka_I_got_it_solution_answer_clarity.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/151605_winner_aced_it_yowza_whoo_awesome_wicked.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/151607_new_problem_its_so_simple_puzzle_piece.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/152516_mySound_GPSUK_bookreading.wav__chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/152516_mySound_GPSUK_bookreading.wav__chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/153108_People_Talking.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/155368_yum_yum_yum_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160039_castleguimaraes_people_talking.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160039_castleguimaraes_people_talking.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160039_castleguimaraes_people_talking.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160494_small_crowd_outdoors.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160494_small_crowd_outdoors.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160494_small_crowd_outdoors.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160494_small_crowd_outdoors.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160494_small_crowd_outdoors.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160511_Radio_Chatter_Via_Spaceman_VST.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160511_Radio_Chatter_Via_Spaceman_VST.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/160511_Radio_Chatter_Via_Spaceman_VST.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/161703_talking-bird.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/161703_talking-bird.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/161703_talking-bird.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/161703_talking-bird.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/162010_Drillsarge_PresentArms_TenHut.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/162010_Drillsarge_PresentArms_TenHut.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/165239_I'll_eat_his_butt.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/165239_I'll_eat_his_butt.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/165239_I'll_eat_his_butt.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/170641_Bullshit_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/17401_Chinainterview03.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/175234_Nonsense_sentence_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/185122_20130330_old.story.05.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/185122_20130330_old.story.05.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/185122_20130330_old.story.05.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/185431_ummm2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/185431_ummm2.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/185431_ummm2.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/185432_my_legs_are_short.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/186916_zx.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/186916_zx.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/187308_NYC_Subway_station,_teens_talking.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/18752_Hall01.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/18754_Hall10.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188214_Science_teacher_lecturing.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188214_Science_teacher_lecturing.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188214_Science_teacher_lecturing.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188214_Science_teacher_lecturing.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188214_Science_teacher_lecturing.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188361_Sound_Memories_-_Somorrostro.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188361_Sound_Memories_-_Somorrostro.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188361_Sound_Memories_-_Somorrostro.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188361_Sound_Memories_-_Somorrostro.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/188361_Sound_Memories_-_Somorrostro.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189202_Child's_speech_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189202_Child's_speech_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189202_Child's_speech_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189202_Child's_speech_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189479_Soldier's_speech_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189479_Soldier's_speech_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189479_Soldier's_speech_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189479_Soldier's_speech_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189479_Soldier's_speech_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189744_Refugee's_speech_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189744_Refugee's_speech_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189744_Refugee's_speech_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189744_Refugee's_speech_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189822_Foul!_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189822_Foul!_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/189822_Foul!_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/191201_sw_Crowd_JazzBandWarmup.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/191201_sw_Crowd_JazzBandWarmup.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/19386_Nextlevel.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/200253_Alfons_Canovas_n.04_-_Un_sonido_entre_todos.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/200253_Alfons_Canovas_n.04_-_Un_sonido_entre_todos.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/200253_Alfons_Canovas_n.04_-_Un_sonido_entre_todos.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/200253_Alfons_Canovas_n.04_-_Un_sonido_entre_todos.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/200253_Alfons_Canovas_n.04_-_Un_sonido_entre_todos.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/21137_pre-show_chatter.flac_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/21137_pre-show_chatter.flac_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/215988_hallway_of_jenks.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/215988_hallway_of_jenks.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/215988_hallway_of_jenks.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/215999_raindrops,_person_in_way-_real.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/215999_raindrops,_person_in_way-_real.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/216001_wind,_raindrops_person_talking_in_background.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/216001_wind,_raindrops_person_talking_in_background.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/216001_wind,_raindrops_person_talking_in_background.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/217794_Opening_a_Big_Monster_Energy_Drink.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/217794_Opening_a_Big_Monster_Energy_Drink.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/217794_Opening_a_Big_Monster_Energy_Drink.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/217794_Opening_a_Big_Monster_Energy_Drink.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/218373_To_really_Know_A_Man.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/218373_To_really_Know_A_Man.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/218373_To_really_Know_A_Man.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/22032_Numbers_EnglishFemale.flac_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/22032_Numbers_EnglishFemale.flac_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/22032_Numbers_EnglishFemale.flac_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/22032_Numbers_EnglishFemale.flac_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/22032_Numbers_EnglishFemale.flac_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/221874_Mi_presentación_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/221874_Mi_presentación_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/221874_Mi_presentación_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/222594_ship_shape.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23202_Lecture09.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23202_Lecture09.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23202_Lecture09.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23202_Lecture09.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/235240_Crowd_Walla_Medium_Distance.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236349_M-RRs.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236405_M-NYT_blurb-1.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236405_M-NYT_blurb-1.aif_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236405_M-NYT_blurb-1.aif_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236406_M-NYT_blurb-2.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236406_M-NYT_blurb-2.aif_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23640_Mensen_op_de_achtergrond.001.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23640_Mensen_op_de_achtergrond.001.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23640_Mensen_op_de_achtergrond.001.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236440_B-08D.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236486_B-49D.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236513_C-NYT-blurb.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236513_C-NYT-blurb.aif_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236518_C-NYD-blurb.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236518_C-NYD-blurb.aif_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236576_M-NYD_blurb.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236576_M-NYD_blurb.aif_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236590_B-21A.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236786_ZOOM0001.WAV_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236786_ZOOM0001.WAV_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236786_ZOOM0001.WAV_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236786_ZOOM0001.WAV_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/236786_ZOOM0001.WAV_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23883_people&amp;kids_piano3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23883_people&amp;kids_piano3.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23883_people&amp;kids_piano3.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/23883_people&amp;kids_piano3.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239103_Jose_Miguel_Bouen_-_Orígen.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239103_Jose_Miguel_Bouen_-_Orígen.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239103_Jose_Miguel_Bouen_-_Orígen.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239103_Jose_Miguel_Bouen_-_Orígen.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239106_Llibreria_-_Orígen.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239106_Llibreria_-_Orígen.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239106_Llibreria_-_Orígen.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239106_Llibreria_-_Orígen.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/239106_Llibreria_-_Orígen.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240163_Ana,_Lorenza_i_Ana_-_Canvis.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240163_Ana,_Lorenza_i_Ana_-_Canvis.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240167_Jose_Miguel_Bouen_-_Canvis.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240167_Jose_Miguel_Bouen_-_Canvis.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240167_Jose_Miguel_Bouen_-_Canvis.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240167_Jose_Miguel_Bouen_-_Canvis.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240168_Llibrería_-_Canvis_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240168_Llibrería_-_Canvis_1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240168_Llibrería_-_Canvis_1.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240168_Llibrería_-_Canvis_1.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240170_Ura_y_Moises_-_Orígen.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240170_Ura_y_Moises_-_Orígen.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240170_Ura_y_Moises_-_Orígen.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240170_Ura_y_Moises_-_Orígen.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240170_Ura_y_Moises_-_Orígen.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240172_Ura_y_Moises_-_Canvis_3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240172_Ura_y_Moises_-_Canvis_3.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240172_Ura_y_Moises_-_Canvis_3.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240172_Ura_y_Moises_-_Canvis_3.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240172_Ura_y_Moises_-_Canvis_3.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240175_Lourdes_loteria_-_Canvis_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240175_Lourdes_loteria_-_Canvis_1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240175_Lourdes_loteria_-_Canvis_1.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240175_Lourdes_loteria_-_Canvis_1.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240175_Lourdes_loteria_-_Canvis_1.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240176_Ura_i_Moises_-_Canvis_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240176_Ura_i_Moises_-_Canvis_1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240179_Ura_i_Moises_-_Canvis_5.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240181_Andrea_-_Orígen.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240181_Andrea_-_Orígen.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240181_Andrea_-_Orígen.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240181_Andrea_-_Orígen.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240181_Andrea_-_Orígen.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240853_Scent_of_Death_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/240853_Scent_of_Death_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/242576_5.MP3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/242576_5.MP3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/242992_Stereo_Radio_España_17715_&amp;_21515KHZ.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/242992_Stereo_Radio_España_17715_&amp;_21515KHZ.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/246117_Party_Crowd_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/246117_Party_Crowd_1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/246117_Party_Crowd_1.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/246117_Party_Crowd_1.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/246267_TurnTheVolumeDown.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/250375_tommy-3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/250375_tommy-3.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/253128_spanish_729_19-jun-2014_2206_interview2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/25461_interviewparakeet.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/25461_interviewparakeet.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/25461_interviewparakeet.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/25461_interviewparakeet.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/25461_interviewparakeet.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/254880_Deep_Low_Male_Voice_-_Round_1_-_Fight_-_Version_2_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/254880_Deep_Low_Male_Voice_-_Round_1_-_Fight_-_Version_2_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/254880_Deep_Low_Male_Voice_-_Round_1_-_Fight_-_Version_2_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/254880_Deep_Low_Male_Voice_-_Round_1_-_Fight_-_Version_2_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260121_Indoor_adult_murmur,_small_group.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260121_Indoor_adult_murmur,_small_group.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260121_Indoor_adult_murmur,_small_group.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260121_Indoor_adult_murmur,_small_group.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260121_Indoor_adult_murmur,_small_group.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260122_Indoor_adult_murmur,_medium_group.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260122_Indoor_adult_murmur,_medium_group.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260122_Indoor_adult_murmur,_medium_group.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260122_Indoor_adult_murmur,_medium_group.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260123_Indoor_adult_murmur,_large_group.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260123_Indoor_adult_murmur,_large_group.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260123_Indoor_adult_murmur,_large_group.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260123_Indoor_adult_murmur,_large_group.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260124_Indoor_adult_murmur,_couple.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260124_Indoor_adult_murmur,_couple.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/260124_Indoor_adult_murmur,_couple.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/262776_Announcer_UK_(A#)_(Aries,_Athlete,_Armada,_Adventure,_Ambient,_Amused).mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/264519_where_am_I?_(male_vocal)_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/264519_where_am_I?_(male_vocal)_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/264519_where_am_I?_(male_vocal)_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/264612_thank_you_please_wait_for_assistance.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/264612_thank_you_please_wait_for_assistance.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/264752_Phone_Messages,_English_and_Italian_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/267166_Seascraper_-_Equation_of_Love_Sophie_+_Jay_(Straight)_(C#)_(Calm,_Clean,_Canada,_Chimera,_Clear,_Celebrity,_Clutch,_Capitalist,_Corporations,_Classic).WAV_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/267166_Seascraper_-_Equation_of_Love_Sophie_+_Jay_(Straight)_(C#)_(Calm,_Clean,_Canada,_Chimera,_Clear,_Celebrity,_Clutch,_Capitalist,_Corporations,_Classic).WAV_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/267166_Seascraper_-_Equation_of_Love_Sophie_+_Jay_(Straight)_(C#)_(Calm,_Clean,_Canada,_Chimera,_Clear,_Celebrity,_Clutch,_Capitalist,_Corporations,_Classic).WAV_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/267166_Seascraper_-_Equation_of_Love_Sophie_+_Jay_(Straight)_(C#)_(Calm,_Clean,_Canada,_Chimera,_Clear,_Celebrity,_Clutch,_Capitalist,_Corporations,_Classic).WAV_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/267166_Seascraper_-_Equation_of_Love_Sophie_+_Jay_(Straight)_(C#)_(Calm,_Clean,_Canada,_Chimera,_Clear,_Celebrity,_Clutch,_Capitalist,_Corporations,_Classic).WAV_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/267250_BerlinGameScene.com_Crowd_Mumble_2_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/267251_BerlinGameScene.com_Crowd_Mumble_1_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/267251_BerlinGameScene.com_Crowd_Mumble_1_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/270184_Sonidos_del_puerto_-_Gabiotas,_pitido_barcos,_venta_en_la_lonja_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/270184_Sonidos_del_puerto_-_Gabiotas,_pitido_barcos,_venta_en_la_lonja_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/270185_Sonido_del_puerto_-_Pito_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/270186_Sonidos_del_puerto_-_Gabiotas_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/270187_Sonidos_del_puerto_-_Subasta_vocal_vs._electronica_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/270187_Sonidos_del_puerto_-_Subasta_vocal_vs._electronica_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/270187_Sonidos_del_puerto_-_Subasta_vocal_vs._electronica_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/270187_Sonidos_del_puerto_-_Subasta_vocal_vs._electronica_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/273704_little_buzz_in_the_rain_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/273704_little_buzz_in_the_rain_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/273704_little_buzz_in_the_rain_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/273704_little_buzz_in_the_rain_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/274757_No_Credit_Message_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/274757_No_Credit_Message_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277003_04b_Pere_i_el_llop.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277003_04b_Pere_i_el_llop.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277004_03_Pere_i_el_llop.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277004_03_Pere_i_el_llop.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277004_03_Pere_i_el_llop.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277005_02_Pere_i_el_llop.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277005_02_Pere_i_el_llop.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277006_01_Pere_i_el_llop.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277006_01_Pere_i_el_llop.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277007_16_Pere_i_el_llop.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277007_16_Pere_i_el_llop.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277008_12a_Pere_i_el_llop.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277009_10a_Pere_i_el_llop.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/277010_05a_Pere_i_el_llop.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/28452_STE-016_return_to_seats.flac_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/28452_STE-016_return_to_seats.flac_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/28452_STE-016_return_to_seats.flac_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/28452_STE-016_return_to_seats.flac_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/30041_small_group_laugh_4.flac_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31557_Lisa_Vox-Carolyn_Train.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31557_Lisa_Vox-Carolyn_Train.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31557_Lisa_Vox-Carolyn_Train.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31557_Lisa_Vox-Carolyn_Train.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31557_Lisa_Vox-Carolyn_Train.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31560_Lisa_Vox-TheusBrown_Train.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31560_Lisa_Vox-TheusBrown_Train.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31560_Lisa_Vox-TheusBrown_Train.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31560_Lisa_Vox-TheusBrown_Train.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/31560_Lisa_Vox-TheusBrown_Train.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/317465_Any_of_your_business.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/318595_Magna_Carta_(voice)_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/318595_Magna_Carta_(voice)_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/318595_Magna_Carta_(voice)_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/318595_Magna_Carta_(voice)_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/318830_I_dont_want_to_die.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/324124_voice.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/324124_voice.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/324783_conversation.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/324783_conversation.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/324783_conversation.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/324783_conversation.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/327137_speech-male_hpsModel_stochastic.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/327139_speech-male_hpsModel_sines.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/327140_speech-male_hpsModel.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/327141_speech-male_hprModel_residual.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/328098_Crazy_Ones_-_Outside_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/328098_Crazy_Ones_-_Outside_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/328098_Crazy_Ones_-_Outside_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/328187_Phone_announcement:_number_not_available_(German_+_English)_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/328187_Phone_announcement:_number_not_available_(German_+_English)_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/328187_Phone_announcement:_number_not_available_(German_+_English)_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/329043_a8p2-transformed-3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/330008_Narrator_2.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/333395_Murmur_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/333415_Murmur_2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/333415_Murmur_2.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/335585_Crowd_(Walla).mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/335585_Crowd_(Walla).mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/33700_20070406.conversation.fireplace.02.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/33700_20070406.conversation.fireplace.02.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/33700_20070406.conversation.fireplace.02.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/33700_20070406.conversation.fireplace.02.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/33700_20070406.conversation.fireplace.02.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/339270_Scarlet_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/339990_Conversation_in_Uhall_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/339990_Conversation_in_Uhall_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/339990_Conversation_in_Uhall_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/339990_Conversation_in_Uhall_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/339990_Conversation_in_Uhall_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/340000_Plant_Rustling_|_Loud_Conversation_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/340000_Plant_Rustling_|_Loud_Conversation_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/340023_General_Chatter_and_Talking_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/340038_Laughing_and_Talking__chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/340038_Laughing_and_Talking__chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/341976_Yeah_Voice_Over_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/34420_men_of_goodwill.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/348324_GroupOfPeople.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/348324_GroupOfPeople.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/348324_GroupOfPeople.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/348837_Art_museum_conversation.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/348837_Art_museum_conversation.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352602_Carefull_of_the_gators.MP3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352602_Carefull_of_the_gators.MP3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352602_Carefull_of_the_gators.MP3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352602_Carefull_of_the_gators.MP3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352606_Electronic_music_geeks_talking.MP3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352606_Electronic_music_geeks_talking.MP3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352606_Electronic_music_geeks_talking.MP3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352606_Electronic_music_geeks_talking.MP3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/352606_Electronic_music_geeks_talking.MP3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/364972_whispered_hello_goodbye_german_english.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/364972_whispered_hello_goodbye_german_english.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/364972_whispered_hello_goodbye_german_english.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/364972_whispered_hello_goodbye_german_english.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/368198_What's_That,_You_Say?.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/368198_What's_That,_You_Say?.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/368198_What's_That,_You_Say?.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/370709_Mathias_Words_Request_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/370709_Mathias_Words_Request_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/370709_Mathias_Words_Request_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/371553_Aw_yeah!_Thats_what_Im_talking_about!_-_Male_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/371553_Aw_yeah!_Thats_what_Im_talking_about!_-_Male_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/371553_Aw_yeah!_Thats_what_Im_talking_about!_-_Male_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/371553_Aw_yeah!_Thats_what_Im_talking_about!_-_Male_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/372608_Dutch_people_talking_during_guided_tour_in_a_castle_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/372608_Dutch_people_talking_during_guided_tour_in_a_castle_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/372608_Dutch_people_talking_during_guided_tour_in_a_castle_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/372608_Dutch_people_talking_during_guided_tour_in_a_castle_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/372608_Dutch_people_talking_during_guided_tour_in_a_castle_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/37611_by_any_means.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/37611_by_any_means.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/37611_by_any_means.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/37611_by_any_means.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/376963_Reioli_Request_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/376963_Reioli_Request_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/376963_Reioli_Request_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/376963_Reioli_Request_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/377139_University_Class.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/377139_University_Class.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/37809_kerryintro.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/37809_kerryintro.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/378322_atmosphere.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/378322_atmosphere.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/378322_atmosphere.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/378322_atmosphere.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/378322_atmosphere.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/380803_peoplez.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/380803_peoplez.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/380804_human_talking_in_the_street.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/380804_human_talking_in_the_street.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/381373_Crowd_Talking_Quietly_Stadium.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/381373_Crowd_Talking_Quietly_Stadium.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/381454_crowd_noise_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/381454_crowd_noise_1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/381454_crowd_noise_1.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/382006_Escalator.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/382006_Escalator.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/382006_Escalator.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/382006_Escalator.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/386492_Whispers1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/386492_Whispers1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/386498_Whispers5.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/386498_Whispers5.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/386498_Whispers5.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/386498_Whispers5.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/386498_Whispers5.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/387463_people_at_airport_room.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/387463_people_at_airport_room.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/387463_people_at_airport_room.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/389993_distant_conversation-_dance_studio_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/389993_distant_conversation-_dance_studio_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/389993_distant_conversation-_dance_studio_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/389993_distant_conversation-_dance_studio_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/389993_distant_conversation-_dance_studio_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390745_DIA_001_connavar_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390746_DIA_002_connavar_2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390747_DIA_003_connavar_3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390748_DIA_007_jardir_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390749_DIA_006_inevera_2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390750_DIA_005_inevera_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390750_DIA_005_inevera_1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390751_DIA_004_connavar_4.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390752_DIA_011_yu-yu-liang_2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390753_DIA_010_yu-yu-liang_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390753_DIA_010_yu-yu-liang_1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390755_DIA_008_jardir_2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390756_DIA_012_yu-yu-liang_3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390835_TalkingAmbience01.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/390835_TalkingAmbience01.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/392101_People_Walking_around_the_park_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/392101_People_Walking_around_the_park_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/392101_People_Walking_around_the_park_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/392101_People_Walking_around_the_park_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/394632_Proverbs_13_verse_3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395124_People_marrymaking.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395124_People_marrymaking.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395124_People_marrymaking.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395315_sound-of-party.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395315_sound-of-party.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395315_sound-of-party.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395570_Four_Talons.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395570_Four_Talons.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395570_Four_Talons.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/395570_Four_Talons.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/396456_jibberish_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/400728_Push_the_limits_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/400730_Surface_of_the_sun_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/400731_Power_together_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/403908_man_hey_sing_loud.flac_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/404659_INDOOR_AMBIENCE.WAV_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/40548_jackals.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/40548_jackals.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/40548_jackals.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/40548_jackals.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409551_black_widow.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409551_black_widow.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409552_black_pearl.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409558_millienum_falcon.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409558_millienum_falcon.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409559_vulture.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409564_whos_your_friend_.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409567_orange.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409567_orange.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/409567_orange.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/411032_group_talking.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/411542_group_talking.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/412035_group_talking.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/412709_girl_voice_answering_phone_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/413188_Van_Gogh.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/416651_Baby_Gibberish_16.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/416676_Baby_Gibberish_3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/418863_Day_of_democracy_in_Kathmandu_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/418863_Day_of_democracy_in_Kathmandu_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/418863_Day_of_democracy_in_Kathmandu_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/418863_Day_of_democracy_in_Kathmandu_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/418863_Day_of_democracy_in_Kathmandu_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/418989_Gak_mau_ngaku.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/418989_Gak_mau_ngaku.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/419348_The_Speech_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/419348_The_Speech_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/419348_The_Speech_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/419348_The_Speech_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422912_Dialogue_Pilot_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422915_Dialogue_Lewis_12.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422923_Conversation_7_FX.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422923_Conversation_7_FX.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422923_Conversation_7_FX.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422923_Conversation_7_FX.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422925_Conversation_6_FX.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422925_Conversation_6_FX.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422925_Conversation_6_FX.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422926_Conversation_6.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422926_Conversation_6.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422926_Conversation_6.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422929_Conversation_8_FX.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422929_Conversation_8_FX.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422930_Conversation_8.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422953_DialogueNPCFarm3Into.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422957_DialogueNPCFarm7AllKeysFound.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422957_DialogueNPCFarm7AllKeysFound.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/422958_DialogueNPCFarm6KeyTemple.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/425671_Lecture.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/425671_Lecture.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/425671_Lecture.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/425671_Lecture.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/427326_Discretion_Advised.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/428072_female_babble_2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/428072_female_babble_2.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/428072_female_babble_2.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/432229_sw_FeelingsVocalized.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/432229_sw_FeelingsVocalized.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/432229_sw_FeelingsVocalized.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/434596_Small_group_talking_at_lunch.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/434596_Small_group_talking_at_lunch.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/434596_Small_group_talking_at_lunch.m4a_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/434596_Small_group_talking_at_lunch.m4a_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/434596_Small_group_talking_at_lunch.m4a_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/435680_Croatian_computer_science_lecture_inside_the_classroom_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/435680_Croatian_computer_science_lecture_inside_the_classroom_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/435680_Croatian_computer_science_lecture_inside_the_classroom_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/440563_To_consider_a_lecture,_to_consider_it_well.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/440563_To_consider_a_lecture,_to_consider_it_well.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/440563_To_consider_a_lecture,_to_consider_it_well.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/440563_To_consider_a_lecture,_to_consider_it_well.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/440563_To_consider_a_lecture,_to_consider_it_well.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/442818_REUTER_Jennyfer_2018_2019_Phone_Call.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/442818_REUTER_Jennyfer_2018_2019_Phone_Call.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/442818_REUTER_Jennyfer_2018_2019_Phone_Call.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/444141_Talking_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/444141_Talking_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449454_group_talking_mastered.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449456_Group_Talking_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449456_Group_Talking_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449456_Group_Talking_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449456_Group_Talking_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449487_Group_Talking_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449487_Group_Talking_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449487_Group_Talking_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449487_Group_Talking_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449511_Theatre_Class_Lecture_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449511_Theatre_Class_Lecture_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449511_Theatre_Class_Lecture_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/449511_Theatre_Class_Lecture_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/450205_speech_camaron.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/458135_Wimbledon_Winners_(voice)_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/458135_Wimbledon_Winners_(voice)_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/458135_Wimbledon_Winners_(voice)_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/458135_Wimbledon_Winners_(voice)_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/458135_Wimbledon_Winners_(voice)_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/460651_roomtone_kids_talking_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/460651_roomtone_kids_talking_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/460651_roomtone_kids_talking_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/460651_roomtone_kids_talking_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/461116_10_people_on_the_train.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/461116_10_people_on_the_train.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/461116_10_people_on_the_train.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/461116_10_people_on_the_train.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/463755_Walla_indoors_people_children_Dutch_2017_Zuilen.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/463755_Walla_indoors_people_children_Dutch_2017_Zuilen.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/463755_Walla_indoors_people_children_Dutch_2017_Zuilen.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/463755_Walla_indoors_people_children_Dutch_2017_Zuilen.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/463755_Walla_indoors_people_children_Dutch_2017_Zuilen.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/463758_Terminal_Amsterdam_walla_people_08-06-2016.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/463758_Terminal_Amsterdam_walla_people_08-06-2016.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/463758_Terminal_Amsterdam_walla_people_08-06-2016.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/46443_Freesound-Project.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/46443_Freesound-Project.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/464536_guideance3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/466847_Background_Noises_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/46868_freesoundproject.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/473897_Creepy_Man_Talking_Compilation_#2_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/473897_Creepy_Man_Talking_Compilation_#2_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/473897_Creepy_Man_Talking_Compilation_#2_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/473897_Creepy_Man_Talking_Compilation_#2_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/479965_R19-32-Golf_Swings.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/479965_R19-32-Golf_Swings.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/479965_R19-32-Golf_Swings.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/479965_R19-32-Golf_Swings.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/479965_R19-32-Golf_Swings.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/480746_R07-21-Casual_Conversation_Large_Group.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/480746_R07-21-Casual_Conversation_Large_Group.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/480746_R07-21-Casual_Conversation_Large_Group.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/480747_R07-22-Close_Up_Conversation_Large_Group.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/480747_R07-22-Close_Up_Conversation_Large_Group.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/480752_R07-36-High-pitched_Shouting_and_Laughter.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/480752_R07-36-High-pitched_Shouting_and_Laughter.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/480752_R07-36-High-pitched_Shouting_and_Laughter.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/48404_20080215.twentytwo.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/48404_20080215.twentytwo.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/48404_20080215.twentytwo.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486034_R12-40-Safety_Narrator_and_Explosion.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486034_R12-40-Safety_Narrator_and_Explosion.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486174_R07-37-Men_and_Women_Laughing_Merrily.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486174_R07-37-Men_and_Women_Laughing_Merrily.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486174_R07-37-Men_and_Women_Laughing_Merrily.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486176_R07-47-Medium_Group_of_Men_and_Women.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486176_R07-47-Medium_Group_of_Men_and_Women.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486176_R07-47-Medium_Group_of_Men_and_Women.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486179_R07-53-Mixed_Group_Yelling_and_Screaming.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486179_R07-53-Mixed_Group_Yelling_and_Screaming.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486179_R07-53-Mixed_Group_Yelling_and_Screaming.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486179_R07-53-Mixed_Group_Yelling_and_Screaming.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486939_bus.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486939_bus.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486939_bus.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486939_bus.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/486939_bus.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/496439_Narrartion.aiff_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/50493_I_have_become.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/513476_I.Call.The.Shots.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/513476_I.Call.The.Shots.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/513476_I.Call.The.Shots.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/513476_I.Call.The.Shots.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/513476_I.Call.The.Shots.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/514707_YOU_SHOULD_HAVE_HIRED_THE_MONKEY_AND_AD_LIBS.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/514707_YOU_SHOULD_HAVE_HIRED_THE_MONKEY_AND_AD_LIBS.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/514707_YOU_SHOULD_HAVE_HIRED_THE_MONKEY_AND_AD_LIBS.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519654_Large_Crown_In_building_Walla.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519654_Large_Crown_In_building_Walla.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519654_Large_Crown_In_building_Walla.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519654_Large_Crown_In_building_Walla.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519654_Large_Crown_In_building_Walla.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519655_Large_Crowd_WALLA.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519655_Large_Crowd_WALLA.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519655_Large_Crowd_WALLA.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519655_Large_Crowd_WALLA.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/519655_Large_Crowd_WALLA.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520779_Виолетта_Постнова.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520780_Вероника_Георгиева.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520780_Вероника_Георгиева.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520780_Вероника_Георгиева.m4a_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520786_Грехт.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520786_Грехт.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520786_Грехт.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520786_Грехт.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520786_Грехт.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520788_Роза_По.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520788_Роза_По.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520788_Роза_По.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520788_Роза_По.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520788_Роза_По.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520792_Арсений_Сергеев.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520792_Арсений_Сергеев.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520792_Арсений_Сергеев.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520792_Арсений_Сергеев.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520792_Арсений_Сергеев.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520793_Федор_Павлов-Андреевич.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520793_Федор_Павлов-Андреевич.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520797_Владимир_Колесников.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520797_Владимир_Колесников.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520798_Аристарх_Чернышев.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520799_Алексей_Шульгин.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520799_Алексей_Шульгин.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520800_Ростан_Тавасиев.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520800_Ростан_Тавасиев.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520800_Ростан_Тавасиев.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520801_Екатерина_Ефимик.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520801_Екатерина_Ефимик.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520801_Екатерина_Ефимик.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520802_Вита_Буйвид.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520803_Алла_Урбан.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520803_Алла_Урбан.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520803_Алла_Урбан.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520803_Алла_Урбан.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520827_Ольга_Божко.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520830_Анастасия_Левина.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520831_Алексей_Трегубов.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520831_Алексей_Трегубов.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520833_Сhtaq_Chtak.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520833_Сhtaq_Chtak.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520833_Сhtaq_Chtak.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520833_Сhtaq_Chtak.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520833_Сhtaq_Chtak.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520836_Иван_Плющ.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520836_Иван_Плющ.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520837_Сергей_Филатов.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520837_Сергей_Филатов.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/520837_Сергей_Филатов.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/522678_Семен_Мотолянец.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/527426_what_do_you_think_is_going_to_happen_anyway.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/527426_what_do_you_think_is_going_to_happen_anyway.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/527426_what_do_you_think_is_going_to_happen_anyway.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/527428_I_think_theres_a_message_outside_for_you.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/527428_I_think_theres_a_message_outside_for_you.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/527428_I_think_theres_a_message_outside_for_you.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/528615_Muffled_Talking_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/528615_Muffled_Talking_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/528615_Muffled_Talking_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/531703_VoicePack_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/531703_VoicePack_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/531703_VoicePack_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/531703_VoicePack_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/531703_VoicePack_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/532698_1.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/533986_group_people_fun_sing_city160422_01.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/533986_group_people_fun_sing_city160422_01.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/533986_group_people_fun_sing_city160422_01.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/533986_group_people_fun_sing_city160422_01.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/534481_mob_noice_city_central_square.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/534481_mob_noice_city_central_square.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/534481_mob_noice_city_central_square.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/534481_mob_noice_city_central_square.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/534481_mob_noice_city_central_square.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536217_Conversation_morning.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536217_Conversation_morning.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536217_Conversation_morning.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536217_Conversation_morning.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536217_Conversation_morning.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536217_Conversation_morning.wav_chunk_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536344_Many_people.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536344_Many_people.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536344_Many_people.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536344_Many_people.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536344_Many_people.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536344_Many_people.wav_chunk_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536345_People_distant.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536345_People_distant.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536345_People_distant.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536345_People_distant.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536345_People_distant.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/536345_People_distant.wav_chunk_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/537338_GroupOfBoys-1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/537338_GroupOfBoys-1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/537338_GroupOfBoys-1.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/537338_GroupOfBoys-1.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/537338_GroupOfBoys-1.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/540683_Outside.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/540683_Outside.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/540683_Outside.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/540683_Outside.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/540683_Outside.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/553928_Pouring_Milk_&amp;_Espresso_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/553928_Pouring_Milk_&amp;_Espresso_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/553928_Pouring_Milk_&amp;_Espresso_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/553928_Pouring_Milk_&amp;_Espresso_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/553928_Pouring_Milk_&amp;_Espresso_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/558284_ArtistInterviews04_Lizzie1_-_hummrow_spiel.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/558284_ArtistInterviews04_Lizzie1_-_hummrow_spiel.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/558284_ArtistInterviews04_Lizzie1_-_hummrow_spiel.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/558340_Artist_Interview01_VDS_-_wouldnt_it_be_fantastic...wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/558362_ArtistInterviews03_JimmyE_-_i_would_like_to_kill_err_i_would_like_to_kill.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/558362_ArtistInterviews03_JimmyE_-_i_would_like_to_kill_err_i_would_like_to_kill.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/558452_Artist_Interview01_VDS_-_I_FEEL_VERY_COMFORTABLE_AND_I_LIKE_WHERE_I_AM.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/563362_VO_Enemy_RestrainingPlayer.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/564945_Krusty_Crabbies.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/566313_ProspectorGibberishDialogue3.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/566314_GruffCowboyGibberishDialogue5.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/566318_MadTrainConductorGibberishDialogue2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/566320_GruffCowboyGibberishDialogue7.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579809_bruno_wawa_0907212.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579809_bruno_wawa_0907212.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579809_bruno_wawa_0907212.m4a_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579809_bruno_wawa_0907212.m4a_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579810_bruno_mi_0907213.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579810_bruno_mi_0907213.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579810_bruno_mi_0907213.m4a_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579810_bruno_mi_0907213.m4a_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579811_bruno_bla_090721.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579811_bruno_bla_090721.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579811_bruno_bla_090721.m4a_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/579811_bruno_bla_090721.m4a_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/580590_U_R_Whatchew_R.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/580590_U_R_Whatchew_R.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/580590_U_R_Whatchew_R.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/580590_U_R_Whatchew_R.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/58174_20080728.recording.not.allowed.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/58174_20080728.recording.not.allowed.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/58174_20080728.recording.not.allowed.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/58174_20080728.recording.not.allowed.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587504_Counting_1_to_10_Goofy.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587504_Counting_1_to_10_Goofy.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587504_Counting_1_to_10_Goofy.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587505_Counting_1_to_10__Serious_Ver_1.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587505_Counting_1_to_10__Serious_Ver_1.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587505_Counting_1_to_10__Serious_Ver_1.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587508_Days_of_the_week.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587508_Days_of_the_week.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587509_Leave_a_Like_and_Subscribe.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587509_Leave_a_Like_and_Subscribe.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/587510_Welcome_to_My_Website_3_ver.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/591011_Swagoontrax™_-_Voices_&amp;_Vocals_-_Lobby_or_Convention;_Roughhousing_or_Horseplaying_Children,_Talking_or_Communicating_-_Chatroom_Ambience,_Little_Children,_Blowing_Little_Violence_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/591011_Swagoontrax™_-_Voices_&amp;_Vocals_-_Lobby_or_Convention;_Roughhousing_or_Horseplaying_Children,_Talking_or_Communicating_-_Chatroom_Ambience,_Little_Children,_Blowing_Little_Violence_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/591011_Swagoontrax™_-_Voices_&amp;_Vocals_-_Lobby_or_Convention;_Roughhousing_or_Horseplaying_Children,_Talking_or_Communicating_-_Chatroom_Ambience,_Little_Children,_Blowing_Little_Violence_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/592663_OWI_-_Background_talking_and_moaning_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/59612_japaneseairport2.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/59612_japaneseairport2.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/59612_japaneseairport2.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/59612_japaneseairport2.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/59612_japaneseairport2.mp3_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/60688_Crowd_Talking.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/60688_Crowd_Talking.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/60688_Crowd_Talking.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/60689_Good_Morning.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/607188_Les_Ocasions_-_Monts_i_Pilar_-_No_cambio_la_Barceloneta_por_nada_del_mundo_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/607188_Les_Ocasions_-_Monts_i_Pilar_-_No_cambio_la_Barceloneta_por_nada_del_mundo_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/607188_Les_Ocasions_-_Monts_i_Pilar_-_No_cambio_la_Barceloneta_por_nada_del_mundo_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608224_Ester_Santa_-_Un_barri_de_sirenes_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608224_Ester_Santa_-_Un_barri_de_sirenes_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608224_Ester_Santa_-_Un_barri_de_sirenes_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608224_Ester_Santa_-_Un_barri_de_sirenes_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608225_Coloms_i_gallines_al_balcó_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608225_Coloms_i_gallines_al_balcó_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608225_Coloms_i_gallines_al_balcó_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608227_El_camp,_el_mar,_les_fàbriques_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608227_El_camp,_el_mar,_les_fàbriques_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608227_El_camp,_el_mar,_les_fàbriques_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608235_Ester_Santa_-_Un_barri_matriarcal_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608235_Ester_Santa_-_Un_barri_matriarcal_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608236_Xiulets_de_família_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608236_Xiulets_de_família_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608236_Xiulets_de_família_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608236_Xiulets_de_família_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608939_Many_people_talking.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608939_Many_people_talking.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608939_Many_people_talking.m4a_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/608939_Many_people_talking.m4a_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/609548_oh-baby-cartoon.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/609548_oh-baby-cartoon.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/609548_oh-baby-cartoon.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/609548_oh-baby-cartoon.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/61572_goodbye.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/61572_goodbye.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/61572_goodbye.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/61572_goodbye.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/618165_Talk_Default_Low02.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/619042_booing_(medium-sized_crowd_of_men_and_women).mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/619042_booing_(medium-sized_crowd_of_men_and_women).mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/619042_booing_(medium-sized_crowd_of_men_and_women).mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/619042_booing_(medium-sized_crowd_of_men_and_women).mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/620461_Crowd_Talking_Sound_Effect.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/620461_Crowd_Talking_Sound_Effect.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/621328_Valhalla_admits_the_brave!_-_NO_reverb.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/623171_Woman_Leaving_a_Phone_Message_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/623171_Woman_Leaving_a_Phone_Message_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/623171_Woman_Leaving_a_Phone_Message_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/62478_uchor.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/62478_uchor.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/62478_uchor.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/627797_Voice_sound:_ladies_and_gentlemen_we_are_proudly_presenting_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/627798_3-2-1-liftoff_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/627798_3-2-1-liftoff_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/627798_3-2-1-liftoff_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/63352_20081115.male.conversation.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/63352_20081115.male.conversation.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/63681_00602_women_crowd_1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/63681_00602_women_crowd_1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/63681_00602_women_crowd_1.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640736_Rap_accapella_vocal_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640736_Rap_accapella_vocal_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640736_Rap_accapella_vocal_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640736_Rap_accapella_vocal_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640736_Rap_accapella_vocal_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640737_Snippet_vocals_male_rap_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640737_Snippet_vocals_male_rap_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640737_Snippet_vocals_male_rap_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/640737_Snippet_vocals_male_rap_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/641227_Chinese_People_Talking_In_Chinatown.m4a_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/641227_Chinese_People_Talking_In_Chinatown.m4a_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/641227_Chinese_People_Talking_In_Chinatown.m4a_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/641227_Chinese_People_Talking_In_Chinatown.m4a_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/641227_Chinese_People_Talking_In_Chinatown.m4a_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643296_One_love_to_humanity_and_mankind_-_vocal_speaking_a-capella_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643296_One_love_to_humanity_and_mankind_-_vocal_speaking_a-capella_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643296_One_love_to_humanity_and_mankind_-_vocal_speaking_a-capella_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643296_One_love_to_humanity_and_mankind_-_vocal_speaking_a-capella_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643296_One_love_to_humanity_and_mankind_-_vocal_speaking_a-capella_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643381_Vodka_variations_-_vocal_speech_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643381_Vodka_variations_-_vocal_speech_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643381_Vodka_variations_-_vocal_speech_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643381_Vodka_variations_-_vocal_speech_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643458_Wise_words_-_English_spoken_-_Vocal_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643458_Wise_words_-_English_spoken_-_Vocal_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643458_Wise_words_-_English_spoken_-_Vocal_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643458_Wise_words_-_English_spoken_-_Vocal_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643458_Wise_words_-_English_spoken_-_Vocal_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/643942_Stupid_idiot_human_-_robot_voice_-_FMajor.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/644033_Spoken_words_about_life_and_death_1_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/644623_Love_intelligence_wisdom_for_real.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/648443_InvertedSpeechCQ.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/654091_English_Native_Story_Short.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/654093_English_Native_Descriptive_Short.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/654093_English_Native_Descriptive_Short.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/654093_English_Native_Descriptive_Short.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/656082_truck_drive_by_talking.1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/656082_truck_drive_by_talking.1.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/656082_truck_drive_by_talking.1.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/656345_Afrikannse_dinner_Amb.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/658728_Lithuanian_Voice_Acting_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/658728_Lithuanian_Voice_Acting_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/658728_Lithuanian_Voice_Acting_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/658849_iPhone_Scam.aif_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/65963_486_-_Grandma_Nut_FM_speech_synth.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/661732_Church_Indistinct_Chatter.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/661732_Church_Indistinct_Chatter.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/661732_Church_Indistinct_Chatter.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/661732_Church_Indistinct_Chatter.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/662598_147_Liam_howlett_interview_snip_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/662598_147_Liam_howlett_interview_snip_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/666561_weapon_master33.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/667715_before-after_Adobe-enhance_remix_of_Roses1401's_freesound#665070.flac_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/667715_before-after_Adobe-enhance_remix_of_Roses1401's_freesound#665070.flac_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/667715_before-after_Adobe-enhance_remix_of_Roses1401's_freesound#665070.flac_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/667715_before-after_Adobe-enhance_remix_of_Roses1401's_freesound#665070.flac_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/667715_before-after_Adobe-enhance_remix_of_Roses1401's_freesound#665070.flac_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/672081_Hang_up,_and_then_dial_your_operator_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/677456_Number_Invalid_Hindi_English_-_Automated_Intercept_Recording_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/677456_Number_Invalid_Hindi_English_-_Automated_Intercept_Recording_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/684818_Барахолка_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/684818_Барахолка_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/684818_Барахолка_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/684818_Барахолка_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/686344_street_fair_background_noise.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/686344_street_fair_background_noise.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/686370_background_talk.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/686370_background_talk.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/690343_SpongeBob_French_Narrator_III_.flac_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/69067_andthatswhyeveryoneshould.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/69072_someofyourememberthat.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/69076_youcanbringdrinksin.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/69117_jupiter_people.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/692506_B_(Boron)_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/697584_Hey_You_got_to_Live_n_Learn_VOCAL.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/697584_Hey_You_got_to_Live_n_Learn_VOCAL.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/69869_Thats_nice.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/702597_Crowd_Scene,_Cheering.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/702597_Crowd_Scene,_Cheering.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/702597_Crowd_Scene,_Cheering.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/702597_Crowd_Scene,_Cheering.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/703676_Lisp_Speech.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705573_Appointment_With_Fear_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705573_Appointment_With_Fear_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705573_Appointment_With_Fear_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705573_Appointment_With_Fear_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705574_Drug_Abuse_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705574_Drug_Abuse_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705576_Flight_to_the_Future_#2_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705579_Nowhere_Man_-_Absolute_Zero_#1.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705580_Nowhere_Man_-_Absolute_Zero_#2_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705580_Nowhere_Man_-_Absolute_Zero_#2_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705580_Nowhere_Man_-_Absolute_Zero_#2_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705580_Nowhere_Man_-_Absolute_Zero_#2_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705580_Nowhere_Man_-_Absolute_Zero_#2_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705581_Doom_Machine_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/705581_Doom_Machine_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/707584_Moist_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/707584_Moist_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/707584_Moist_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/710856_AMB_LargeGroupTalking_03_Reverb_LargeSpace_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/710856_AMB_LargeGroupTalking_03_Reverb_LargeSpace_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/710856_AMB_LargeGroupTalking_03_Reverb_LargeSpace_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/710856_AMB_LargeGroupTalking_03_Reverb_LargeSpace_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/710857_AMB_Largegrouptalking_01_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/710857_AMB_Largegrouptalking_01_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/710857_AMB_Largegrouptalking_01_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/710857_AMB_Largegrouptalking_01_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/711026_Street_atmosphere_and_sounds_in_Rome_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/711026_Street_atmosphere_and_sounds_in_Rome_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/711026_Street_atmosphere_and_sounds_in_Rome_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/711026_Street_atmosphere_and_sounds_in_Rome_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/714296_3_part_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/714296_3_part_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/714296_3_part_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/714296_3_part_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/714296_3_part_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/71600_kayels_room2.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/71600_kayels_room2.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/71600_kayels_room2.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/71600_kayels_room2.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/71600_kayels_room2.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/722803_Words_-_A_poem_by_Nicholas_the_octopus_Camarena_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/722803_Words_-_A_poem_by_Nicholas_the_octopus_Camarena_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/722803_Words_-_A_poem_by_Nicholas_the_octopus_Camarena_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/745669_GO_Station_PA_Arrival_Chime+Announcement_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/745669_GO_Station_PA_Arrival_Chime+Announcement_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/745669_GO_Station_PA_Arrival_Chime+Announcement_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/745669_GO_Station_PA_Arrival_Chime+Announcement_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/747030_room_full_of_people_talking_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/747030_room_full_of_people_talking_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/747030_room_full_of_people_talking_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/747030_room_full_of_people_talking_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/755446_down-town_street_NL_738_PM_240919_0919_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/755446_down-town_street_NL_738_PM_240919_0919_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/755446_down-town_street_NL_738_PM_240919_0919_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/755446_down-town_street_NL_738_PM_240919_0919_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/755446_down-town_street_NL_738_PM_240919_0919_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/755446_down-town_street_NL_738_PM_240919_0919_chunk_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763895_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763895_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763895_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763895_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763896_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763896_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763896_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763896_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763897_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763897_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763897_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763897_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/763897_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_XY-AKG214-96k.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764018_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764018_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764018_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764018_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764019_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764019_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764019_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764019_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764020_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764020_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764020_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764020_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764020_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_BIN-AmbeoVR.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764127_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764127_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764127_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764127_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764128_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764128_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764128_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764128_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764129_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764129_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764129_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764129_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764129_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764130_CRWDWalla_Soft_Conference_Room_Walla,_American_English,_Library_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764130_CRWDWalla_Soft_Conference_Room_Walla,_American_English,_Library_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764130_CRWDWalla_Soft_Conference_Room_Walla,_American_English,_Library_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764130_CRWDWalla_Soft_Conference_Room_Walla,_American_English,_Library_ShaneVincent_GSC24_FUMA-AmbeoVR.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764237_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_MSDEC-MKH435-Spirit.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764237_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_MSDEC-MKH435-Spirit.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764237_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_MSDEC-MKH435-Spirit.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764237_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_MSDEC-MKH435-Spirit.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764345_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764345_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764345_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764345_CRWDWalla_Conference_Room_Walla,_American_English_01_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764346_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764346_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764346_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764346_CRWDWalla_Conference_Room_Walla,_American_English_02_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764347_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764347_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764347_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764347_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764347_CRWDWalla_Loud_Conference_Room_Walla,_American_English_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764348_CRWDWalla_Soft_Conference_Room_Walla,_American_English,_Library_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764348_CRWDWalla_Soft_Conference_Room_Walla,_American_English,_Library_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764348_CRWDWalla_Soft_Conference_Room_Walla,_American_English,_Library_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/764348_CRWDWalla_Soft_Conference_Room_Walla,_American_English,_Library_ShaneVincent_GSC24_SpacedOmni-MK012.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/76593_Tb1_003.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/76601_Tb2_010.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/76605_Tb3_004.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/76606_Tb3_006.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/772345_tram_arriving_7_(with_human_speech)_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/78002_Gonny_no_dae_that_ya_rocket_(pseudostereo)_WC.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/78002_Gonny_no_dae_that_ya_rocket_(pseudostereo)_WC.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/786047_people_talking_25_secs_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/786047_people_talking_25_secs_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/786047_people_talking_25_secs_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/786047_people_talking_25_secs_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/786047_people_talking_25_secs_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/796682_AHMED_RECORDING_TEST_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/796682_AHMED_RECORDING_TEST_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/796682_AHMED_RECORDING_TEST_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/802087_Formal_Mother's_Day_Tribute_–_Elegant_and_Poetic_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/802087_Formal_Mother's_Day_Tribute_–_Elegant_and_Poetic_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/803117_Mr._Vincent_4-1_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/803117_Mr._Vincent_4-1_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/803117_Mr._Vincent_4-1_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/803117_Mr._Vincent_4-1_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/803117_Mr._Vincent_4-1_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804494_Mumbo_Jumbo_bus_1_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804494_Mumbo_Jumbo_bus_1_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804494_Mumbo_Jumbo_bus_1_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804494_Mumbo_Jumbo_bus_1_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804494_Mumbo_Jumbo_bus_1_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804714_petite_italie_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804714_petite_italie_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804714_petite_italie_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804714_petite_italie_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804715_couple-de-touriste_Zetcg0T6_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/804715_couple-de-touriste_Zetcg0T6_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/805918_MaleSpeechSample_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809208_1._VESELJE_-_Osebna_izkušnja_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809208_1._VESELJE_-_Osebna_izkušnja_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809208_1._VESELJE_-_Osebna_izkušnja_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809208_1._VESELJE_-_Osebna_izkušnja_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809209_2._VESELJE_-_Igriva_naloga_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809209_2._VESELJE_-_Igriva_naloga_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809209_2._VESELJE_-_Igriva_naloga_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809209_2._VESELJE_-_Igriva_naloga_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809210_3._VESELJE_-_Samorefleksija_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809210_3._VESELJE_-_Samorefleksija_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/809210_3._VESELJE_-_Samorefleksija_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/82981_GENO_WASHINGTON_01.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/8323_powerwords-english.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/8323_powerwords-english.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/8323_powerwords-english.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/8323_powerwords-english.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/8376_powerwords-english.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/8376_powerwords-english.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/8376_powerwords-english.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/8376_powerwords-english.mp3_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84391_conversation_in_crowd.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84391_conversation_in_crowd.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84391_conversation_in_crowd.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84391_conversation_in_crowd.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84391_conversation_in_crowd.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84609_devil5.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84610_devil6.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84611_devil7.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84611_devil7.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84612_devil8.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/84612_devil8.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/85351_milton_2.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/85352_milton_free_sound.mp3_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/85352_milton_free_sound.mp3_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/85352_milton_free_sound.mp3_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/86568_tilburg_kusjes_doeidoei.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/86568_tilburg_kusjes_doeidoei.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/86568_tilburg_kusjes_doeidoei.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/86568_tilburg_kusjes_doeidoei.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/87778_vocals.WAV_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/89292_ccc_if_the_nsa_can_wiretap.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/89292_ccc_if_the_nsa_can_wiretap.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/89292_ccc_if_the_nsa_can_wiretap.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/9238_bram_versus_plaga_plaga_speaking_on_phone_spanglish.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/9238_bram_versus_plaga_plaga_speaking_on_phone_spanglish.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/9238_bram_versus_plaga_plaga_speaking_on_phone_spanglish.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/9238_bram_versus_plaga_plaga_speaking_on_phone_spanglish.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/94009_presentation-Udaipur-Bagore-Ki-Haveli-3.WAV_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/94009_presentation-Udaipur-Bagore-Ki-Haveli-3.WAV_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/94009_presentation-Udaipur-Bagore-Ki-Haveli-3.WAV_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/94009_presentation-Udaipur-Bagore-Ki-Haveli-3.WAV_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/94009_presentation-Udaipur-Bagore-Ki-Haveli-3.WAV_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96937_kst_walla_90_siroko.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96937_kst_walla_90_siroko.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96937_kst_walla_90_siroko.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96937_kst_walla_90_siroko.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96937_kst_walla_90_siroko.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96938_kst_walla_90.wav_chunk_0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96938_kst_walla_90.wav_chunk_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96938_kst_walla_90.wav_chunk_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96938_kst_walla_90.wav_chunk_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96938_kst_walla_90.wav_chunk_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/premade_vad_thresholds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/silero_realworld_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webRTC_silero_pipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfcc_svm_vad.py" beforeDir="false" afterPath="$PROJECT_DIR$/mfcc_svm_vad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real_data_vad.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_data_vad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamlit_annotations_updated.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit_annotations_updated.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webrtc_base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/webrtc_base_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,45 +1225,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.NN_focus.executor": "Run",
-    "Python.NN_improvement.executor": "Run",
-    "Python.NN_test.executor": "Run",
-    "Python.audio_backend_test.executor": "Run",
-    "Python.base_pyannote_test.executor": "Run",
-    "Python.changing_metadata.executor": "Run",
-    "Python.classifier_comparison.executor": "Run",
-    "Python.custom_vad.executor": "Run",
-    "Python.dataset.executor": "Run",
-    "Python.dataset_verification.executor": "Run",
-    "Python.final_svm_randomness_test.executor": "Run",
-    "Python.five_second_clips.executor": "Run",
-    "Python.fixing_metadata.executor": "Run",
-    "Python.joblib_model_test.executor": "Run",
-    "Python.live_dataset_split.executor": "Run",
-    "Python.metadata_finalizing.executor": "Run",
-    "Python.mfcc_svm_vad.executor": "Run",
-    "Python.new_training_split.executor": "Run",
-    "Python.one_audio_test.executor": "Run",
-    "Python.paula_audio_test.executor": "Run",
-    "Python.real_data_classifier_comparison.executor": "Run",
-    "Python.real_data_vad.executor": "Run",
-    "Python.real_dataset_annotations.executor": "Run",
-    "Python.real_dataset_split.executor": "Run",
-    "Python.realistic_test.executor": "Run",
-    "Python.silero_testing.executor": "Run",
-    "Python.test_comparison.executor": "Run",
-    "Python.train_test_val_split.executor": "Run",
-    "Python.vad_test.executor": "Run",
-    "Python.webrtc_base_test.executor": "Run",
-    "Python.zenodo_dataset_cleanup.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.NN_focus.executor&quot;: &quot;Run&quot;,
+    &quot;Python.NN_improvement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.NN_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.audio_backend_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.base_pyannote_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.changing_metadata.executor&quot;: &quot;Run&quot;,
+    &quot;Python.classifier_comparison.executor&quot;: &quot;Run&quot;,
+    &quot;Python.custom_vad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataset_verification.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_svm_randomness_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.five_second_clips.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fixing_metadata.executor&quot;: &quot;Run&quot;,
+    &quot;Python.joblib_model_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.live_dataset_split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.metadata_finalizing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mfcc_svm_vad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new_training_split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.one_audio_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.paula_audio_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.premade_vad_thresholds.executor&quot;: &quot;Run&quot;,
+    &quot;Python.real_data_classifier_comparison.executor&quot;: &quot;Run&quot;,
+    &quot;Python.real_data_vad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.real_dataset_annotations.executor&quot;: &quot;Run&quot;,
+    &quot;Python.real_dataset_split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.realistic_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.silero_realworld_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.silero_testing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_comparison.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_test_val_split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vad_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.webRTC_silero_pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.webrtc_base_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zenodo_dataset_cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_paula_recordings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/five_second_paula_recordings" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/docs" />
@@ -411,7 +1605,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753891531599</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="working with the new real-life data, playing with different models">
+      <option name="closed" value="true" />
+      <created>1755017439261</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1755017439261</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,7 +1628,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tested WebRTC VAD, and updated readme with results" />
     <MESSAGE value="Updated ReadME" />
     <MESSAGE value="Trained and tested custom VAD using MFCC and an SVM. Updated README.md with results." />
     <MESSAGE value="Tried improvments to VAD model, updated README.md" />
@@ -451,6 +1652,7 @@
     <MESSAGE value="Updated SVM.md" />
     <MESSAGE value="Saved model using joblib, tested model was saved correctly" />
     <MESSAGE value="Checked model against new &quot;real&quot; dataset, without much success due to poor generalization. Set up system to manually label new dataset more efficiently" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checked model against new &quot;real&quot; dataset, without much success due to poor generalization. Set up system to manually label new dataset more efficiently" />
+    <MESSAGE value="working with the new real-life data, playing with different models" />
+    <option name="LAST_COMMIT_MESSAGE" value="working with the new real-life data, playing with different models" />
   </component>
 </project>

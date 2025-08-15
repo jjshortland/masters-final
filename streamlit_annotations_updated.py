@@ -39,7 +39,7 @@ st.info("Thanks for helping me annotate my dataset! Please listen to each 5-seco
         " speech or non-speech buttons. Once you've clicked a button, it will load the next audio file and save your"
         " answer. If you need to go back, you can press the go back button to change your answer. All answers are saved"
         " right away, so feel free to close this whenever and pick it back up later. If you're unsure of a clip, press "
-        " the 'Flag' button so I know to check it myselg. Whenever you're sick of doing this, send me the csv file "
+        " the 'Flag' button so I know to check it myself. Whenever you're sick of doing this, send me the csv file "
         " that's saved in the same directory. Thanks again!")
 st.info(f"Labeling file {st.session_state.index + 1} of {len(unlabeled_files)}")
 
@@ -47,7 +47,7 @@ st.markdown(f"**File: {current_file.name}**")
 st.audio(current_file.read_bytes(), format="audio/wav")
 
 # Layout buttons
-col1, col2, col3, col4 = st.columns([1, 2, 1, 2])
+col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
     if st.button("Speech"):
         # Save label
@@ -84,12 +84,3 @@ with col3:
         st.session_state.index += 1
         st.rerun()
 
-with col4:
-    if st.button("Go Back", key="go_back") and st.session_state.index > 0:
-        # Remove last entry from file
-        annotations = pd.read_csv(label_file)
-        st.session_state.index -= 1
-        file_to_remove = unlabeled_files[st.session_state.index].name
-        annotations = annotations[annotations['filename'] != file_to_remove]
-        annotations.to_csv(label_file, index=False)
-        st.rerun()

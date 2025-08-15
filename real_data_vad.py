@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.model_selection import GridSearchCV
 
 # train_metadata = pd.read_csv('/Users/jamesshortland/Desktop/labels/training_dataset.csv')
-train_metadata = pd.read_csv('/Users/jamesshortland/Desktop/labels/unbalanced_paula_training.csv')
+train_metadata = pd.read_csv('/Users/jamesshortland/Desktop/labels/unbalanced_paula_training_extra.csv')
 test_metadata = pd.read_csv('/Users/jamesshortland/Desktop/labels/test_dataset.csv')
 # test_metadata = pd.read_csv('/Users/jamesshortland/Desktop/labels/test_balanced.csv')
 

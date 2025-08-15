@@ -8,8 +8,11 @@ from pathlib import Path
 vad = webrtcvad.Vad()
 vad.set_mode(3)
 
-metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset/metadata_split.csv')
-#metadata = metadata[(metadata['split'] == 'test') & (metadata['verified'] == True)]
+metadata = pd.read_csv('/Users/jamesshortland/Desktop/labels/complete_annotations.csv')
+metadata = metadata[metadata['label'] != 'flagged']
+
+# metadata = pd.read_csv('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset/metadata_split.csv')
+# metadata = metadata[(metadata['split'] == 'test') & (metadata['verified'] == True)]
 
 def is_speech(filepath):
     try:
@@ -29,12 +32,15 @@ def is_speech(filepath):
 y_true = []
 y_pred = []
 
-base_path = Path('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset')
+# base_path = Path('/Users/jamesshortland/PycharmProjects/Masters_Final/freesound_dataset')
+base_path = Path('/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_paula_recordings')
 
 for _, row in metadata.iterrows():
     label = row['label']
-    filename = row['filepath']
-    full_path = base_path/label/filename
+    # filename = row['filepath']
+    filename = row['filename']
+    # full_path = base_path/label/filename
+    full_path = base_path/filename
 
     predicted = 'speech' if is_speech(full_path) else 'non_speech'
 
@@ -67,8 +73,8 @@ print(f"False negatives (missed speech): {len(false_negatives)}")
 
 print('Saving results to CSV...')
 
-incorrect_df.to_csv("webrtc_base_misclassified.csv", index=False)
-false_negatives.to_csv("webrtc_base_false_negatives.csv", index=False)
+incorrect_df.to_csv("webrtc_real_data_misclassified.csv", index=False)
+false_negatives.to_csv("webrtc_real_data_false_negatives.csv", index=False)
 
 
 
