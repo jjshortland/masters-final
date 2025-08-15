@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="working with the new real-life data, playing with different models">
-      <change afterPath="$PROJECT_DIR$/docs/poor_generalization.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/real_data.md" afterDir="false" />
+    <list default="true" id="7b522457-b135-4daf-9f34-55dd447bfbf9" name="Changes" comment="Updated the markdown">
       <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/101811_entering_local_bar_with_conversations_and_TV.wav_chunk_0.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/101811_entering_local_bar_with_conversations_and_TV.wav_chunk_1.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/101811_entering_local_bar_with_conversations_and_TV.wav_chunk_2.wav" afterDir="false" />
@@ -1192,14 +1190,9 @@
       <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96938_kst_walla_90.wav_chunk_2.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96938_kst_walla_90.wav_chunk_3.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/five_second_paula_recordings/speech/96938_kst_walla_90.wav_chunk_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/premade_vad_thresholds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/silero_realworld_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webRTC_silero_pipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real_data_vad.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_data_vad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamlit_annotations_updated.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit_annotations_updated.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webrtc_base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/webrtc_base_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/poor_generalization.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/poor_generalization.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1613,7 +1606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755017439261</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Updated the markdown">
+      <option name="closed" value="true" />
+      <created>1755277017598</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1755277017598</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1628,7 +1629,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated ReadME" />
     <MESSAGE value="Trained and tested custom VAD using MFCC and an SVM. Updated README.md with results." />
     <MESSAGE value="Tried improvments to VAD model, updated README.md" />
     <MESSAGE value="Compared 5 different ML classifiers, and then updated the README with the results" />
@@ -1653,6 +1653,7 @@
     <MESSAGE value="Saved model using joblib, tested model was saved correctly" />
     <MESSAGE value="Checked model against new &quot;real&quot; dataset, without much success due to poor generalization. Set up system to manually label new dataset more efficiently" />
     <MESSAGE value="working with the new real-life data, playing with different models" />
-    <option name="LAST_COMMIT_MESSAGE" value="working with the new real-life data, playing with different models" />
+    <MESSAGE value="Updated the markdown" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the markdown" />
   </component>
 </project>
