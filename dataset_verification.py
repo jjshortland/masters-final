@@ -2,17 +2,14 @@ import pandas as pd
 from pydub import AudioSegment
 from pydub.playback import play
 
-# Config
 metadata_file = '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_freesound_dataset/metadata.csv'
 folder_path = '/Users/jamesshortland/PycharmProjects/Masters_Final/five_second_freesound_dataset/'
 batch_size = 50
 
-# Load data
 df = pd.read_csv(metadata_file)
 
 print(df.shape)
 
-# Filter unverified clips
 unverified_df = df[df['verified'].astype(str) == 'no']
 total_batches = (len(unverified_df) + batch_size - 1) // batch_size
 
@@ -23,7 +20,7 @@ def change_playback_speed(sound, speed=1.5):
     new_frame_rate = int(sound.frame_rate * speed)
     return sound._spawn(sound.raw_data, overrides={"frame_rate": new_frame_rate}).set_frame_rate(sound.frame_rate)
 
-# Main loop
+
 for batch_num in range(total_batches):
     batch_start = batch_num * batch_size
     batch_end = min(batch_start + batch_size, len(unverified_df))
@@ -49,14 +46,11 @@ for batch_num in range(total_batches):
 
         verified = input("Is this correct? (Y/N): ").strip().lower()
 
-        # Update the original df using the filename (not full path!)
         df.loc[df['filepath'] == clip_filename, 'verified'] = 'True' if verified == 'y' else 'No Match'
 
-    # Save progress
     df.to_csv(metadata_file, index=False)
     print(f"\nBatch {batch_num + 1} complete. Progress saved.")
 
-    # Ask if user wants to continue
     cont = input("\nContinue to next batch? (Y/N): ").strip().lower()
     if cont != 'y':
         print("Stopping verification. You can resume later.")
